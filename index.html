@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Registration</title>
+</head>
+<body>
+    <main class="hidden"> 
+      <h1>Event Registration</h1>
+      <form id="event-registration">
+          <fieldset>
+            <label for="first-name">First Name</label>
+            <input type="text" name="name" id="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="name" id="last-name" required>
+            <label for="email">Email</label>
+            <input type="email" name="name" id="email" size="30" placeholder="youremail@example.com" required>
+          </fieldset>
+          
+          <fieldset>
+          <legend>Pronouns</legend>
+          <div>
+          <input name="pronouns" value="she-her" type="radio" id="she-her">
+          <label for="she-her">She/Her</label>
+          </div>
+
+          <div>
+          <input name="pronouns" value="he-him" type="radio" id="he-him">
+          <label for="he-him">He/Him</label>
+          </div>
+
+          <div>
+          <input name="pronouns" value="they-them" type="radio" id="they-them">
+          <label for="they-them">They/Them</label>
+          </div>
+
+          <div>
+          <input name="pronouns" value="no-answer" type="radio" id="no-answer">
+          <label for="no-answer">Prefer not to answer</label>
+          </div>
+          </fieldset>
+
+          <fieldset>
+              <legend>
+                  T-shirt Preference?
+              </legend>
+                  <label for="size">Size</label>
+                  <select id="size" name="size" required>
+                        <option value="" hidden disabled selected>Select a size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                  </select>
+
+                  <label for="style">Style</label>
+                  <select id="style" name="style" required>
+                      <option value="" hidden disabled selected>Select a style</option>
+                      <option value="kids">Kids</option>
+                      <option value="fitted">Fitted</option>
+                      <option value="unisex">Unisex</option>
+                  </select>
+
+                  <label for="color">Color</label>
+                  <select id="color" name="color" required>
+                      <option value="" hidden disabled selected>Select a color</option>
+                      <option value="white">White</option>
+                      <option value="blue">Blue</option>
+                      <option value="red">Red</option>
+                      <option value="black">Black</option>
+                  </select>
+          </fieldset>
+
+          <!-- <fieldset>
+              <legend>
+                  Have you killed anyone?
+              </legend>
+
+              <input required type="radio" id="yes" value="yes" name="murder">
+              <label for="yes">Yes</label>
+
+              <input required type="radio" id="no" value="no" name="murder">
+              <label for="no">No</label>
+
+              <div>
+                  <label for="how-many">If yes, how many?</label>
+                  <input type="number" min="1" name="kills" id="how-many">
+              </div>
+          </fieldset> -->
+
+         
+
+          
+
+          <!-- <label for="spaghetti">How awesome is spaghetti?</label>
+          <input type="range" name="spaghetti" id="spaghetti" min="1" max="10">
+          <span id="spaghetti-display">5</span>
+
+          <div>
+              <button>Pledge</button>
+          </div>
+
+          <p id="message"></p> -->
+        </form>
+    </main> 
+</body>
+</html>
