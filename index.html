@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Alchemy Code Camp</h1>
+    </header>
+    
+    <main>
+        <h2>Event Registration</h2>
+        <form id="event-registration">
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <input type="checkbox">
+            <label>Him</label>
+
+            <input type="checkbox">
+            <label>Her</label>
+
+            <label>Email</label>
+            <input type="text" name="email" id="email" required>
+        </form>
+
+        <fieldset>
+            <legend>
+                T-Shirt
+            </legend>
+                <label for="size">T-shirt Size</label>
+                <select id="size" name="size" required>
+                    <option value="" hidden disabled selected>Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xlarge">Xlarge</option>
+                </select>
+           
+                <label for="style">Style</label>
+                <select id="style" name="style" required>
+                    <option value="" hidden disabled selected>Select a style</option>
+                    <option value="mens">Mens</option>
+                    <option value="womens">Womens</option>
+                    <option value="kids">Kids</option>
+                </select>
+
+                <label for="color">Color</label>
+                <select id="color" name="color" required>
+                    <option value="" hidden disabled selected>Select a color</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                </select>
+        </fieldset>
+    </main>
+</body>
+</html>
