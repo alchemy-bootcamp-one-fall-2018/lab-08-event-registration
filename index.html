@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration-form.css">
 </head>
 <body>
     <header>
@@ -35,19 +37,29 @@
             <div class="email">
                 <h2>What is a good email for you?</h2>
                 Email:
-                <input type="email" name="email">
+                <input type="email" id="email" value="email" name="email" required>
             </div>
 
             <div class="shirts">
                 <h2>Name your shirt-swag!</h2>
-                <select id="shirt-type">
+                
+                <select id="shirttype" name="shirttype" required>
                     <option value="kids-shirt">Kids</option>
                     <option value="fitted-shirt">Fitted</option>
-            
+                    <option value="unisex">unisex</option>
+                </select>
+
+                <select id="shirtsize" name="shirtsize" required>
+                    <option value="xs">Xtra Small</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">Xtra Large</option>
+                    <option value="xxl">XX Large</option>
                 </select>
 
             </div>
-            <button>Submit</button>
+            <button id="submitbutton">Submit</button>
         </form>
     </main>
     
