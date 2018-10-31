@@ -1,4 +1,5 @@
 const form = document.getElementById('event-registration');
+const message = document.getElementById('message');
 // const name = document.getElementById('name');
 
 const eventForm = {
@@ -16,13 +17,17 @@ const eventForm = {
             const registration = {};
 
             registration.name = elements.name.value;
-            console.log('start', registration.net);
+            // console.log('start', registration.name);
 
+            registration.prefix = elements.prefix.value;
+            // console.log('worked, registration.', registration.prefix);
             onAdd(registration);
 
-            form.reset();
+            message.textContent = 'Thanks for registering. See you soon!'
+
         });
     }
 };
+form.reset();
 
 export default eventForm; 
