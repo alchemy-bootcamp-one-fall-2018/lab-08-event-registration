@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event-Registration</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+        <h1>Register for Bamboozledpalooza!</h1>
+    </header>
+
+    <main class="hidden">
+        <h1>Get bamboozled</h1>
+        <form id="event-application">
+            <fieldset>
+                <label for="name">First Name: </label>
+                <input type="text" name="name"  id="first-name">
+                <label for="name">Last Name: </label>
+                <input type="text" name="name"  id="last-name">
+                <label for="email">Email: </label>
+                <input type="email" name="email"  id="email">
+            </fieldset>
+            
+
+
+            <fieldset>
+                <legend>
+                    What are your pronouns?
+                </legend>
+
+                <select id="gender dropdown">
+                    <option value="">Select an option</option>
+                    <option value="male">He/Him</option>
+                    <option value="female">She/Her</option>
+                    <option value="nonbinary">They/Them</option>
+                    <option value="none">Prefer not to answer</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Pick your t-shirt specs!
+                </legend>
+                    <label for="tshirt">Select Style and Size: </label>
+                    <select id="tshirt-size">
+                            <optgroup label="Kids">
+                                <option value="Small">Kids Small</option>
+                                <option value="Medium">Kids Medium</option>
+                                <option value="Large">Kids Large</option>
+                            </optgroup>
+                            <optgroup label="Fitted">
+                                    <option value="Small">Fitted Small</option>
+                                    <option value="Medium">Fitted Medium</option>
+                                    <option value="Large">Fitted Large</option>
+                            </optgroup>
+                            <optgroup label="Unisex">
+                                    <option value="Small">Unisex Small</option>
+                                    <option value="Medium">Unisex Medium</option>
+                                    <option value="Large">Unisex Large</option>
+                            </optgroup>
+                    </select>
+
+                    <label for="tshirt-color">Choose a color:</label>
+                    <select id="tshirt-color">
+                        <option value="">--Please choose an color--</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+          
+                    </select>
+
+            </fieldset>
+
+            <fieldset>
+                    <legend>
+                            How many guests are you bringing? (up to 10)
+                    </legend>
+                    <input type="number" name="guests" min="0" max="10">
+            </fieldset>
+
+            <fieldset>
+                    <legend>
+                            What kind of grub do you want to chow on?
+                    </legend>
+                    <div>
+                        <input type="radio" id="carnivore"
+                                value="carnivore" checked />
+                        <label for="carnivore">Carnivore</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="vegan"
+                                name="vegan" value="vegan" />
+                        <label for="vegan">Vegan</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="gf"
+                                name="gf" value="gf" />
+                        <label for="gf">Gluten-free</label>
+                    </div>
+                    
+            </fieldset>
+
+        </form>
+
+
+
+
+    </main>
+
+    
+</body>
+</html>
