@@ -1,0 +1,1 @@
+import registrationForm from './registration-form.js';
