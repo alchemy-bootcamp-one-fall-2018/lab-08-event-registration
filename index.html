@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Register for our event!</h1>
+    </header>
+
+    <main>
+        <form id="form">
+
+            <fieldset>
+                <legend>Who are you?</legend>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="person">
+                </div>
+                
+                    <label>Pronouns:</label>
+                    <div>
+                        <input type="radio" name="pronoun" id="she" value="she">
+                        <label for="she">She/her</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pronoun" id="he" value="he">
+                        <label for="he">He/him</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pronoun" id="they" value="they">
+                        <label for="they">They</label>
+                    </div>
+               
+                <div>
+                    <label>Email address:</label>
+                    <input type="email" id="email">
+                </div>
+            </fieldset>
+
+            <p>Pick your t-shirt size and color:</p>
+            <select>
+                <optgroup label="kids">
+                    <option>small</option>
+                    <option>medium</option>
+                    <option>large</option>
+                </optgroup>
+                <optgroup label="fitted">
+                    <option>extra-small</option>
+                    <option>small</option>
+                    <option>medium</option>
+                    <option>large</option>
+                    <option>extra-large</option>
+                </optgroup>
+                <optgroup label="unisex">
+                    <option>small</option>
+                    <option>medium</option>
+                    <option>large</option>
+                    <option>extra-large</option>
+                    <option>2XL</option>
+                </optgroup>
+            </select>
+            <select>
+                <optgroup>
+                    <optgroup>Color</optgroup>
+                        <option>Blue</option>
+                        <option>Grey</option>
+                        <option>Green</option>
+                        <option>Hot Pink</option>
+                </optgroup>
+            </select>
+
+            <p>Number of guests, in addition to yourself, up to 5 permitted: <input type="number" min="0" max="5" id="guests"></p>
+
+            <fieldset>
+                <legend>Pick your protein:</legend>
+                <div>
+                    <input type="checkbox">
+                    <label>Salmon</label>
+                    <input type="checkbox">
+                    <label>Chicken</label>
+                    <input type="checkbox">
+                    <label>Tofu</label>
+                    <p>All meals include vegetables and a drink.</p>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+    
+</body>
+</html>
