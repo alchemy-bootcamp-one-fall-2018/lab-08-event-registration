@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Family Reunion Registration</title>
+</head>
+<body>
+    <header>
+        <h1> Family Reunion Registration</h1>
+    </header>
+    
+    <main>
+        <form >
+            <fieldset>
+                <legend>
+                    Name
+                </legend>
+                <input required type="text" name="name" id="name">
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Prefix
+                </legend>
+                <label for="prefix">Select Prefix</label>
+                <select id="prefix" name="prefix">
+                    <option value="" hidden disabled selected>Select prefix</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms</option>  
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Email
+                </legend>
+                <label for="email"></label>
+                <input required type="text" name="email" id="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    # of Guests
+                </legend>
+                <label for="guests">Number of Guests</label>
+                <input required type="number" min="0" max="5" id="guests">
+            </fieldset>
+
+            <
+        </form>
+
+    </main>
+</body>
+</html>
