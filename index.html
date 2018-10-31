@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>event</header>
+    <h1>It's My Party</h1>
+
+    <main class="hidden">
+        <h1>Attendee Registration</h1>
+       <form id="event-application-form"></form>
+       <label for="prounoun">Prefered Pronoun</label>
+       <input type="text" name="pronoun" id="pronoun" required>
+        <label for="name">Name</label>
+        <input type="text"name="name" id="name" required>
+        <label for="email" name="email" id="email">Email</label>
+        <input type="text">
+        
+        
+        <fieldset>
+            <legend>
+                Select a Tee Shirt
+            </legend>          
+                
+                <input required type="radio"id="small" value="small" name="size">
+                <label for="small">Small</label>
+                <input required type="radio" id="medium" value="medium" name="size">
+                <label for="medium">medium</label>
+                <input required type="radio"id="large" value="large" name="size">
+                <label for="large">Large</label>
+            
+            <div>
+                <h2>Choose your Style</h2>
+                <input required type="radio" id="kids" value="kids" name="style">
+                <label for="kids">kids</label>
+                <input required type="radio" id="fitted" value="fitted" name="style">
+                <label for="fitted">fitted</label>
+                <input required type="radio" id="unisex" value="unisex" name="style">
+                <label for="unisex">unisex</label>
+            </div>
+                
+            <div>
+                <h2>Color</h2>
+                    <input type="radio" id="black" value="black" name="color">
+                    <label for="black">black</label>
+                    <input type="radio" id="white" value="white" name="color">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+                <legend>
+                    Will you be bringing a guest?
+                </legend>
+                <input type="radio" id="yes" value="yes" name="guest">
+                <label for="yes">yes</label>
+                
+                <input type="radio" id="no" value="no" name="guest">
+                <label for="no">no</label>
+                
+                <div>
+                    <label for="how-many">How Many?</label>
+                    <input type="number" min="1"name="guest" id="how-many">
+                </div>
+
+        <fieldset>
+                <legend>
+                        Select Meal Options
+                </legend>
+
+                <div>
+                    <input type="checkbox" name="meal" value="vegetarian" id="vegetarian" >
+                    <label for="vegetarian">vegetarian</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="meal" value="vegan" id="vegan">
+                    <label for="vegan">vegan</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="meal" value="gluten-free" id="gluten-free">
+                    <label for="gluten-free">gluten free</label>
+                </div>
+
+        </fieldset>
+
+
+
+
+
+
+
+        </fieldset>
+
+    </main>
+
+    
+</body>
+</html>
