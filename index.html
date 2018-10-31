@@ -14,33 +14,33 @@
         <fieldset>
             <legend>Name & Contact:</legend>
             <label for="name">Name:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
 
             <label for="pronoun">Pronoun:</label>
-            <input type="text" name="pronoun">
+            <input type="text" name="pronoun" required>
 
             <label for="email">Email:</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
         </fieldset>
 
         <fieldset>
             <legend>T-Shirt</legend>
             <label for="size">Size:</label>
-            <select name="size">
+            <select name="size" required>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
             </select>
 
             <label for="style">Style:</label>
-            <select name="style">
+            <select name="style" required>
                 <option name="style"  value="long-sleeve">Long Sleeve</option>
                 <option value="short-sleeve">Short Sleeve</option>
                 <option value="v-neck">V-Neck</option>
             </select>
 
             <label for="color">Color:</label>
-            <select name="color">
+            <select name="color" required>
                 <option value="green">Green</option>
                 <option value="blue">Blue</option>
                 <option value="red">Red</option>
@@ -50,17 +50,17 @@
         <fieldset>
             <legend>How many guests are you bringing?</legend>
             <label for="bringing">Number of guests:</label>
-            <input name="bringing" type="number" min="0" max="10"> 
+            <input name="bringing" type="number" min="0" max="10" required> 
         </fieldset>
 
         <fieldset>
             <legend>Choose your meal</legend>
             <label for="salmon">Salmon</label>
-            <input type="radio" name="meal" value="salmon" id="salmon">
+            <input type="radio" name="meal" value="salmon" id="salmon" required>
             <label for="salad">Salad</label>
-            <input type="radio" name="meal" value="salad" id="salad">
+            <input type="radio" name="meal" value="salad" id="salad" required>
             <label for="candy">Candy</label>
-            <input type="radio" name="meal" value="candy" id="candy">
+            <input type="radio" name="meal" value="candy" id="candy" required>
         </fieldset>
 
         <div>
