@@ -1,4 +1,4 @@
-/* eslint-disable no-console' */
+/* eslint-disable no-console */
 import guestsApi from './guests-api.js';
 import registrationForm from './registration-form.js';
 
