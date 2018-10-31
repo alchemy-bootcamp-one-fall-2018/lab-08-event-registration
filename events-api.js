@@ -5,6 +5,13 @@ function saveEvents() {
 }
 
 const eventsApi = {
+    getAll() {
+        const json = localStorage.getItem('events');
+        if(json) {
+            events = JSON.parse(json);
+        }
+        return events;
+    },
     add(event) {
         events.push(event);
 

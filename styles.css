@@ -3,7 +3,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 65vh;
+    height: 70vh;
+}
+
+body {
+    color: #080808;
 }
 
 fieldset {
@@ -19,3 +23,15 @@ fieldset {
     width: 60%;
     text-align: center;
 } 
+
+.she {
+    background-color: #BDBBB0;
+}
+
+.he {
+    background-color: #4FB286;
+}
+
+.theyThem { 
+    background-color: #3C896D;
+}
