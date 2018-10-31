@@ -16,10 +16,10 @@
             <label for="name">Name:</label>
             <input type="text" name="name">
 
-            <label>Pronoun:</label>
+            <label for="pronoun">Pronoun:</label>
             <input type="text" name="pronoun">
 
-            <label>Email:</label>
+            <label for="email">Email:</label>
             <input type="email" name="email">
         </fieldset>
 
@@ -32,12 +32,14 @@
                 <option value="large">Large</option>
             </select>
 
+            <label for="style">Style:</label>
             <select name="style">
-                <option value="long-sleeve">Long Sleeve</option>
+                <option name="style"  value="long-sleeve">Long Sleeve</option>
                 <option value="short-sleeve">Short Sleeve</option>
                 <option value="v-neck">V-Neck</option>
             </select>
 
+            <label for="color">Color:</label>
             <select name="color">
                 <option value="green">Green</option>
                 <option value="blue">Blue</option>
@@ -61,8 +63,9 @@
             <input type="radio" name="meal" value="candy" id="candy">
         </fieldset>
 
-
-
+        <div>
+        <button type="submit">Submit</button>
+        </div>
 
 
     </form>
