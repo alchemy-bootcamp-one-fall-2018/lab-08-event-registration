@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Travel Application</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/registration-form.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+
+</head>
+<body>
+        <header>
+            <img src = ''>  
+            <h1>Space-travel Application</h1>
+        </header>
+
+        <main>
+            <form id="space-application">
+
+                <fieldset id="personalInfoFieldset">
+                    <legend>Your Info</legend>
+
+                    <div class="inputPadding">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="inputPadding"> 
+                        <label for="name">Pronoun:</label>
+                        <input type="text" name="name" id="name" placeholder="he/she/they" required>
+                    </div>
+
+                    <div class="inputPadding">
+                        <label for="name">Email:</label>
+                        <input type="text" name="name" id="name" required>
+                     </div>
+                </fieldset>
+
+                <fieldset class="fieldsetPadding">
+                    <legend id='spaceshipLegend'>
+                        Pick Your Spaceship:
+                    </legend>
+
+                    <label>Emissary</label>
+                    <input required type="radio" id="emissaryShip" name="spaceshipType">
+                
+                    <label>Scythe</label>
+                    <input required type="radio" id="scytheShip" name="spaceshipType">
+                    
+                    <label>LWSS Frontier
+                        </label>
+                    <input required type="radio" id="frontierShip" name="spaceshipType">
+                </fieldset>
+            
+                <fieldset class="fieldsetPadding">
+                    <legend id="groupSizeLegend">Group Size</legend>
+                    <input type="number" min="1" max="6" name="familySize" id="familySize">
+                </fieldset>
+
+                <fieldset id="mealsFieldset">
+                    <legend id="mealPref">Choose Your Meals</legend>
+
+                    <div class="inputPadding">
+                        <label for="breakfast">Breakfast:</label>
+                        <select name="breakfast" id="breakfast">
+                            <option value="fruit salad">pancakes</option>
+                            <option value="wild rice mix">fruit smoothie</option>
+                            <option value="omlette">omlette</option>
+                        </select>
+                    </div>
+
+                    <div class="inputPadding">
+                        <label for="breakfast">Lunch:</label>
+                        <select name="breakfast" id="breakfast">
+                            <option value="fruit salad">veggie burger</option>
+                            <option value="wild rice mix">french fries</option>
+                            <option value="omlette">coconut curry soup</option>
+                        </select>
+                    </div>
+
+                    <div class="inputPadding">
+                        <label for="breakfast">Dinner:</label>
+                        <select name="breakfast" id="breakfast">
+                            <option value="fruit salad">lasgana</option>
+                            <option value="wild rice mix">Veggies and rice</option>
+                            <option value="omlette">kale and avocado salad</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+                <fieldset id="tshirtFieldset">
+                    <legend>T-Shirts!</legend>
+                    <select name="tshirtsize" id="tshirtsize">
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select>
+
+
+                    
+
+
+
+
+
+
+            </form>
+
+
+
+
+        </main>
+        
+
+
+
+
+
+
+
+
+ <script type="module" src="js/app.js"></script>
+  
+</body>
+</html>
