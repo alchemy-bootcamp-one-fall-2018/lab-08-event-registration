@@ -1,5 +1,5 @@
 const form = document.getElementById('event-form');
-const name = document.getElementById('name');
+const success = document.getElementById('success');
 
 const guestForm = {
     init(onAdd) {
@@ -21,9 +21,23 @@ const guestForm = {
 
             attendee.guestNumber = elements.guestNumber.value;
 
-            console.log(attendee);
+            attendee.meal = elements.meal.value;
+
+            attendee.diet = [];
+            
+            for(let i = 0; i < elements.diet.value.length; i++){
+                const diet = elements.diet[i];
+                if(diet.checked){
+                    attendee.diet.push(diet.value);
+                }
+            }
+            
+            console.log(attendee.diet);
+            // console.log(attendee);
 
             onAdd(attendee);
+
+            success.textContent = 'Thanks for registering! We"ll be sending you an email confirmation shortly.';
 
             form.reset();
 

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Registration</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration-form.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
             <legend>About You!</legend>
             <div>
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
             </div>
 
             <div>
@@ -49,7 +50,7 @@
         <fieldset>
             <legend>T-Shirt Preferences</legend>
 
-            <div>
+            <div id="shirt-type">
                 <select name="shirt" id="shirt">
                     <option value="" hidden disabled selected>Pick a size!</option>
                     <optgroup label="Youth">
@@ -73,7 +74,7 @@
                 </select>
             </div>
 
-            <div>
+            <div id="color-shirt">
                 <select name="color" id="shirt-color">
                     <option value="" hidden disabled selected>Pick a color!</option>
                     <option value="black">Black</option>
@@ -87,19 +88,31 @@
         <fieldset id="guests">
             <legend>How many guests are you bringing?</legend>
             <label for="guestNumber">Guest Number</label>
-            <input type="number" name="guestNumber">
+            <input type="number" name="guestNumber" min="1" max="3">
+            <p>*not including yourself!</p>
         </fieldset>
         
-        <fieldset>
+        <fieldset id="eats">
             <legend>Meal Selection</legend>
             
-            <div>
-            <input type="radio" name="vegt">
-            <label for="vegt">Vegetarian</label>
-            </div>
+            <select name="meal" id="meal">
+                <option value="" hidden disabled selected>Your choice!</option>
+                <option value="chicken">Chicken</option>
+                <option value="fish">Fish</option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
 
-            <input type="radio" name="vegan">
-            <label for="vegan">Vegan</label>
+            <div>
+                <h4>Dietary Restrictions</h4>
+                <input type="checkbox" id="diet" name="diet" value="dairy">
+                <label for="dairy">Dairy-Free</label>
+    
+                <input type="checkbox" id="diet" name="diet" value="gluten">
+                <label for="gluten">Gluten Free</label>
+            </div>
 
         </fieldset>
 
@@ -107,6 +120,7 @@
             <button>Submit</button>
         </div>
         </form>
+        <p id="success"></p>
     </main>
 
     <script src="js/app.js" type="module"></script>

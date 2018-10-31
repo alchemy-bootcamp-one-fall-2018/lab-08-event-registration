@@ -1,0 +1,10 @@
+#event-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#success {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}

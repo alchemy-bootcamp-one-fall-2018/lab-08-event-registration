@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     background: teal;
     color: white;
@@ -5,7 +9,16 @@ header {
     padding: 20px;
 }
 
+p {
+    font-size: 12px;
+    font-style: italic;
+}
+
 fieldset {
     width: 50vw;
     margin: 20px;
+}
+
+#color-shirt {
+    display:inline;
 }
