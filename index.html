@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>About You!</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                Pronouns<br>
+                <input required type="radio" id="she" value="she" name="pronoun">
+                <label for="pronoun">She/Her</label>
+
+                <input required type="radio" id="he" value="he" name="pronoun">
+                <label for="pronoun">He/Him</label>
+
+                <input required type="radio" id="they" value="they" name="pronoun">
+                <label for="pronoun">They/Them</label>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input required type="email">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>T-Shirt Preferences</legend>
+
+            <div>
+                <select name="shirt-size" id="shirt-size">
+                    <option value="" hidden disabled selected>Pick a size!</option>
+                    <optgroup label="Youth">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">X-Large</option>
+                    </optgroup>
+                    <optgroup label="Fitted">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">X-Large</option>
+                    </optgroup>
+                    <optgroup label="Unisex">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">X-Large</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <select name="shirt-color" id="shirt-color">
+                    <option value="" hidden disabled selected>Pick a color!</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="gray">Gray</option>
+                    <option value="blue">Navy</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset id="guests">
+            <legend>How many guests are you bringing?</legend>
+            <label for="guest-number">Guest Number</label>
+            <input type="number">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Meal Selection</legend>
+
+            <label for=""></label>
+        </fieldset>
+
+
+
+Meal Selection
+
+    </main>
+</body>
+</html>
