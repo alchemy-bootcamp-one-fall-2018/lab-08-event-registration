@@ -4,11 +4,11 @@ function saveGuests() {
     localStorage.setItem('guests', JSON.stringify(guests));
 }
 
-const guestsApi = {
+const eventApi = {
     add(guest) {
         guests.push(guest);
         saveGuests();
     }
 };
 
-export default guestsApi;
+export default eventApi;
