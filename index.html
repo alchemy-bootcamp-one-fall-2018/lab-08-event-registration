@@ -12,14 +12,14 @@
         <h1>Event Registration! Sign up here!</h1>
     </header>
     <main>
-        <form>
+        <form id="registration-form">
             
             <div class="name">
                 <h2>What's your name?</h2> 
                 <label for="first-name">First Name:</label>
-                <input type="text" name="first-name" id="first-name" required>
+                <input type="text" name="firstName" id="first-name" required>
                 <label for="last-name">Last Name:</label>
-                <input type="text" name="last-name" id="last-name" required>
+                <input type="text" name="lastName" id="last-name" required>
             </div>
             
             <div class="pronoun">
@@ -40,15 +40,19 @@
 
             <div class="shirts">
                 <h2>Name your shirt-swag!</h2>
-                <select id=shirt-type</select>
+                <select id="shirt-type">
                     <option value="kids-shirt">Kids</option>
                     <option value="fitted-shirt">Fitted</option>
             
                 </select>
 
             </div>
-
+            <button>Submit</button>
         </form>
     </main>
+    
+    <script type="module" src="js/app.js"></script>
+
 </body>
 </html>
+
