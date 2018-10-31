@@ -1,3 +1,7 @@
 #fName, #lName, #email, #pronoun {
     display: block;
 }
+
+legend {
+    font-weight: bold;
+}
