@@ -7,11 +7,58 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Event Form</h1>
+
+
     <form id="event-form">
-        <legend>Name & Contact:</legend>
         <fieldset>
+            <legend>Name & Contact:</legend>
             <label for="name">Name:</label>
             <input type="text" name="name">
+
+            <label>Pronoun:</label>
+            <input type="text" name="pronoun">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>T-Shirt</legend>
+            <label for="size">Size:</label>
+            <select name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <select name="style">
+                <option value="long-sleeve">Long Sleeve</option>
+                <option value="short-sleeve">Short Sleeve</option>
+                <option value="v-neck">V-Neck</option>
+            </select>
+
+            <select name="color">
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>How many guests are you bringing?</legend>
+            <label for="range">Number of guests:</label>
+            <input name="number" type="number" min="0" max="10"> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your meal</legend>
+            <label for="salmon">Salmon</label>
+            <input type="radio" name="meal" value="salmon" id="salmon">
+            <label for="salad">Salad</label>
+            <input type="radio" name="meal" value="salad" id="salad">
+            <label for="candy">Candy</label>
+            <input type="radio" name="meal" value="candy" id="candy">
         </fieldset>
 
 
