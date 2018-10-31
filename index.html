@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration-form.css">
+</head>
+<body>
+    
+    <h1>Register for this Really Exciting Event:</h1>
+    <form id="register">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fName">First Name</label>
+            <input class="input" type="text" name="fName" id="fName" required>
+            
+            <label for="lName">Last Name</label>
+            <input class="input" type="text" name="lName" id="lName" required>
+
+            <label for="pronoun">Pronoun</label>
+            <input class="input" type="text" name="pronoun" id="pronoun" required>
+            
+            <label for="email">Email</label>
+            <input class="input" type="email" name="email" id="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+            T-Shirt
+            </legend>
+
+            <div>
+                <label for="tshirt">Size</label>
+                <select id="tshirt">
+                    <option name="tShirtSize" value="small">Small</option>
+                    <option name="tShirtSize" value="medium">Medium</option>
+                    <option name="tShirtSize" value="large">Large</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="kids">Styles</label>
+                <input type="radio" name="tShirtStyle" value="kids" id="kids">Kids
+
+                <label for="fitted"></label>
+                <input type="radio" name="tShirtStyle" value="fitted" id="fitted">Fitted
+            
+                <label for="unisex"></label>
+                <input type="radio" name="tShirtStyle" value="unisex" id="unisex">Unisex
+            </div>
+
+            <div>
+                <label for="color">Color</label>
+                <select id="color">
+                    <option name="tShirtColor" value="red">Red</option>
+                    <option name="tShirtColor" value="blue">Blue</option>
+                    <option name="tShirtColor" value="orange">Orange</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Meal</legend>
+
+            <label for="mainCourse">Main Course</label>
+            <div id="mainCourse">
+                <label for="chicken"></label>
+                <input type="radio" name="mainCourse" value="chicken" id="chicken">Chicken
+
+                <label for="salmon"></label>
+                <input type="radio" name="mainCourse" value="salmon" id="salmon">Salmon
+
+                <label for="vegan"></label>
+                <input type="radio" name="mainCourse" value="vegan" id="vegan">Some weird vegan thing
+            </div>
+
+            <label for="side">Side</label>
+            <div id="side">
+                <label for="salad"></label>
+                <input type="radio" name="sideCourse" value="salad" id="salad">Salad
+
+                <label for="soup"></label>
+                <input type="radio" name="sideCourse" value="soup" id="soup">Soup
+
+                <label for="bread"></label>
+                <input type="radio" name="sideCourse" value="bread" id="bread">Bread, I want carbs!
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other</legend>
+
+            <div>
+                <label for="guests">Guests</label>
+                <input class="input" name="guests" type="number" min="0" checked="checked">
+            </div> 
+
+            <div id="parking">
+                <label for="parking"></label>
+                Parking
+                <label for="yes"></label>
+                <input name="parking" type="radio" name="yes" value="yes" id="yes">Yes
+
+                <label for="no"></label>
+                <input name="parking" type="radio" name="no" value="no" id="no">No
+            </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
