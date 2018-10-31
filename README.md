@@ -1,1 +1,1 @@
-Register for your party to attend Max's birthday party.
+Register to let us know if you can attend Max's birthday party.
