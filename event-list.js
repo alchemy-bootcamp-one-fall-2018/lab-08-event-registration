@@ -8,7 +8,7 @@ function makeEvent(event) {
                 ${event.lastName}
             </h3>
             <h4>
-                ${event.talks}
+                ${event.talks.join(', ')}
             </h4>
         </li>
     `;

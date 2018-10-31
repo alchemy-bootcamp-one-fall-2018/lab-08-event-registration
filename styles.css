@@ -24,6 +24,23 @@ fieldset {
     text-align: center;
 } 
 
+ul {
+    list-style: none;
+}
+
+#events {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+/* background colors, unneeded
 .she {
     background-color: #BDBBB0;
 }
@@ -34,4 +51,5 @@ fieldset {
 
 .theyThem { 
     background-color: #3C896D;
-}
+} */
+
