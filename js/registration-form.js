@@ -8,7 +8,25 @@ const itemForm = {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
             
-            const elements = forms.elements; 
-        }
-    }
-}
+            const elements = form.elements; 
+
+            const attendee = {}; 
+            
+            attendee.name = elements.name.value; 
+            console.log('here', attendee.name); 
+
+            attendee.pronoun = elements.pronoun.value;
+
+            console.log("hello", attendee.pronoun); 
+           
+            
+            onAdd(attendee); 
+            
+            form.reset(); 
+        }); 
+
+
+    } 
+}; 
+
+export default itemForm;
