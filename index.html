@@ -49,7 +49,49 @@
                 <input required type="number" min="0" max="5" id="guests">
             </fieldset>
 
-            <
+            <fieldset>
+                <legend>
+                    Shirt Size
+                </legend>
+                <label for="shirt"> Select shirt size</label>
+                <select required id="shirt" name="shirt">
+                    <option value="" hidden disabled selected></option>
+                    <optgroup label="womens">
+                        <option value="womens s">S</option>
+                        <option value="womens m">M</option>
+                        <option value="womens l">L</option>
+                        <option value="womens xl">XL</option>
+                    </optgroup>
+                    <optgroup label="mens">
+                        <option value="mens s">S</option>
+                        <option value="mens m">M</option>
+                        <option value="mens l">L</option>
+                        <option value="mens xl">XL</option>
+                    </optgroup>
+                    <optgroup label="childrens">
+                        <option value="kids s">S</option>
+                        <option value="kids m">M</option>
+                        <option value="kids l">L</option>
+                        <option value="kids xl">XL</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Meal Preference
+                </legend>
+
+                <input required type="radio" id="chicken" name="meal">
+                <label for="chicken">Chicken</label>
+
+                <input required type="radio" id="fish" name="meal">
+                <label for="fish">Fish</label>
+
+                <input required type="radio" id="veg" name="meal">
+                <label for="vegetarian">Vegetarian</label>
+
+            </fieldset>
         </form>
 
     </main>
