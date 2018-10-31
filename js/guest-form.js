@@ -25,15 +25,14 @@ const guestForm = {
 
             attendee.diet = [];
             
-            for(let i = 0; i < elements.diet.value.length; i++){
+            for(let i = 0; i < elements.diet.length; i++){
                 const diet = elements.diet[i];
                 if(diet.checked){
                     attendee.diet.push(diet.value);
                 }
             }
-            
-            console.log(attendee.diet);
-            // console.log(attendee);
+        
+            console.log(attendee);
 
             onAdd(attendee);
 

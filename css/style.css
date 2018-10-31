@@ -4,6 +4,8 @@ body {
 
 header {
     background: teal;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
     color: white;
     width: 100%;
     padding: 20px;
@@ -19,6 +21,6 @@ fieldset {
     margin: 20px;
 }
 
-#color-shirt {
+/* #color-shirt {
     display:inline;
-}
+} */

@@ -8,3 +8,16 @@
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.pronouns {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    margin: 5px;
+}
+
+
+
