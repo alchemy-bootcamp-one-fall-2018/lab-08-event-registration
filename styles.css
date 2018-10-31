@@ -34,12 +34,30 @@ ul {
     padding: 0;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .event {
     display: inline-block;
     width: 45%;
     text-align: center;
 }
 
+@media (min-width: 700px) {
+    
+    #firstName {
+        width: 20%;
+    }
+
+    #lastName {
+        width: 20%;
+    }
+
+    fieldset {
+        width: 50vw;
+    }
+}
 /* background colors, unneeded
 .she {
     background-color: #BDBBB0;
