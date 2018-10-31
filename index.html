@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>No Fluff, Just Stuff</h1>
+    </header>
+    
+    <main class="hidden"> 
+        <h2>Software Conference Application</h2>
+        <form id="event-application">
+            <label for="name">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+            <label for="name">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+
+            <fieldset>
+                <legend>
+                    What is your pronoun?
+                </legend>
+
+                <input required type="radio" id="she" value="she" name="pronoun">
+                <label for="she">She</label>
+
+                <input required type="radio" id="he" value="he" name="pronoun">
+                <label for="he">He</label>
+
+                <input required type="radio" id="theyThem" value="theyThem" name="pronoun">
+                <label for="theyThem">They/Them</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Which talks will you be attending?
+                </legend>
+
+                <div>
+                    <input name="talks" value="ui-ux" type="checkbox" id="ui-ux">
+                    <label for="ui-ux">UI/UX</label>
+                </div>
+
+                <div>
+                    <input name="talks" value="node" type="checkbox" id="node">
+                    <label for="node">Node</label>
+                </div>
+
+                <div>
+                    <input name="talks" value="agile" type="checkbox" id="agile">
+                    <label for="agile">Agile</label>
+                </div>
+
+                <div>
+                    <input name="talks" value="data" type="checkbox" id="data">
+                    <label for="data">Data Analytics</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    What size T-shirt would you like?
+                </legend>
+                    <label for="tshirt">Select T-shirt size</label>
+                    <select id="tshirt" name="tshirt" required>
+                        <option value="" hidden disabled selected>T-shirt Size</option>
+
+                        <optgroup label="Womens">
+                            <option value="wSmall">Small</option>
+                            <option value="wMedium">Medium</option>
+                            <option value="wLarge">Large</option>
+                            <option value="wXl">XL</option>
+                        </optgroup>
+
+                        <optgroup label="Unisex">
+                            <option value="uSmall">Small</option>
+                            <option value="uMedium">Medium</option>
+                            <option value="uLarge">Large</option>
+                            <option value="uXl">XL</option>
+                        </optgroup>
+
+                        <optgroup label="Mens">
+                            <option value="mSmall">Small</option>
+                            <option value="mMedium">Medium</option>
+                            <option value="mLarge">Large</option>
+                            <option value="mXl">XL</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+
+            <div>
+                <button>Submit Application</button>
+            </div>
+
+        </form>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#event-application {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65vh;
+}
+
+fieldset {
+    width: 85vw;
+}
+
+#firstName {
+    width: 60%;
+    text-align: center;
+} 
+
+#lastName {
+    width: 60%;
+    text-align: center;
+} 
