@@ -6,11 +6,10 @@ const eventForm = {
         const elements = form.elements;
         const events = {};
 
-        elements.pronoun.forEach((item) => {
+        elements.pronoun.forEach(item => {
 
             item.addEventListener('change', function() {
                 if(this.checked) events.pronoun = this.value;
-
             });
         });
 
@@ -22,12 +21,9 @@ const eventForm = {
 
             events.talks = [];
 
-            for(let i = 0; i < elements.talks.length; i++) {
-                const talk = elements.talks[i];
-                if(talk.checked) {
-                    events.talks.push(talk.value);
-                }
-            }
+            elements.talks.forEach(talk => {
+                if(talk.checked) events.talks.push(talk.value);
+            }); 
 
             events.tshirt = elements.tshirt.value;
 
