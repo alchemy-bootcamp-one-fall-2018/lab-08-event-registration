@@ -1,8 +1,11 @@
 const form = document.getElementById('registration-form');
+const femPronoun = document.getElementById('she-her');
+const malePronoun = document.getElementById('he-him');
+const nongenPronoun = document.getElementById('they-them');
 
 
-
-
+const yesKilled = document.getElementById('yes');
+const noKilled = document.getElementById('no');
 
 
 
@@ -14,9 +17,18 @@ const itemForm = {
             const elements = form.elements;
 
             const attendee = {};
-            attendee.name = elements.firstName.value;
+
+        
+            
+            attendee.firstName = elements.firstName.value;
+            attendee.lastName = elements.lastName.value;          
+            attendee.pronoun = elements.pronoun.value;
+           
+
+
 
             console.log(attendee);
+
 
             onAdd(attendee);
 
