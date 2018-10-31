@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     
+    <main class="hidden">
+        <h1>Event Registration Form:</h1>
+        <form id="event-registration">
+            <label for="name">Full name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email address:</label>
+            <input type="text" name="email" id="email" required>
+
+            <fieldset>
+                <legend>
+                    Preferred pronouns:
+                </legend>
+            
+                    <input required type="radio" id="him" value="him" name="pronoun">
+                    <label for="him">Him</label>
+
+                    <input required type="radio" id="her" value="her" name="pronoun">
+                    <label for="her">Her</label>
+
+                    <input required type="radio" id="they" value="they" name="pronoun">
+                    <label for="they">They</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Reserve your T-shirt!
+                </legend>
+                    <label for="shirt-size">Size:</label>
+                    <select id="shirt-size" name="shirt-size" required>
+                        <option value="" hidden disabled selected>Select a size</option>
+                        <option value="xl">XL</option>
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Large</option>
+                    </select>
+
+                    <label for="shirt-style">Style:</label>
+                    <select id="shirt-style" name="shirt-style" required>
+                        <option value="" hidden disabled selected>Select a style</option>
+                        <option value="male">Men's</option>
+                        <option value="female">Women's</option>
+                        <option value="unisex">Unisex</option>
+                        <option value="kid">Kid's</option>
+                    </select>
+
+                    <label for="shirt-color">Color:</label>
+                    <select id="shirt-color" name="shirt-color" required>
+                        <option value="" hidden disabled selected>Select a color</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="purple">Purple</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Number of guests:
+                </legend>
+            
+                    <input required type="radio" id="zero" value="zero" name="guests">
+                    <label for="zero">0</label>
+
+                    <input required type="radio" id="one" value="one" name="guests">
+                    <label for="one">1</label>
+
+                    <input required type="radio" id="two" value="two" name="guests">
+                    <label for="two">2</label>
+
+                    <input required type="radio" id="three-plus" value="three-plus" name="guests">
+                    <label for="three-plus">3+</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    What kind of pizza:
+                </legend>
+            
+                    <input required type="radio" id="meat" value="meat" name="meal">
+                    <label for="meat">Meat</label>
+
+                    <input required type="radio" id="vegetarian" value="vegetarian" name="meal">
+                    <label for="vegetarian">Vegetarian</label>
+
+                    <input required type="radio" id="vegan" value="vegan" name="meal">
+                    <label for="vegan">Vegan</label>
+
+            </fieldset>
+
+            <button>RSVP now!</button>
+        </form>
+    </main>
+
 </body>
 </html>
