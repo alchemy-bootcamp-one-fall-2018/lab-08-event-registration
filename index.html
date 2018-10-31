@@ -10,94 +10,97 @@
     
     <h1>10th Annual Cat Adoption Team Auction</h1>
    
-    <fieldset>
-        <legend>Name</legend>
+    <form id="auction-registration">
+        <fieldset>
+            <legend>Name</legend>
 
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstname" id="first-name">
 
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name">
-    </fieldset>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastname" id="last-name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pronouns</legend>
+        
+            <input type="radio" name="pronoun" id="he" value="he">
+            <label for="he">He/Him</label>
+
+            <input type="radio" name="pronoun" id="she" value="she">
+            <label for="she">She/Her</label>
+
+            <input type="radio" name="pronoun" id="they" value="they">
+            <label for="they">They/Them</label>
+
+            <input type="radio" name="pronoun" id="no-answer" value="no-answer">
+            <label for="no-answer">Prefer not to answer</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Swag Shirt Selection</legend>
+
+            <label for="shirt-style">T-Shirt Style</label>
+            <select name="shirt-style" id="shirt-style">
+                <option value="" hidden disabled selected>Select Shirt Style</option>
+                <option value="fitted">Fitted</option>
+                <option value="unisex">Unisex</option>
+                <option value="kids">Kids</option>
+            </select>
+
+            <label for="shirt-size">T-Shirt Size</label>
+            <select name="shirt-size" id="shirt-size">
+                <option value="" hidden disabled selected>Select Shirt Size</option>
+                <option value="x-small">X-Small</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">X-Large</option>
+            </select>
+        
+
+            <label for="shirt-color">T-Shirt Color</label>
+            <select name="shirt-color" id="shirt-color">
+                <option value="" hidden disabled selected>Select Shirt Color</option>
+                <option value="black">Black</option>
+                <option value="gray">Gray</option>
+                <option value="white">White</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Number of Guests</legend>
+
+            <label for="guest-number">Guests</label>
+            <input type="number" name="guest-number" id="guest-number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Meal Selection</legend>
+
+            <input type="radio" name="meal" value="steak" id="steak">
+            <label for="steak">Steak</label>
+
+            <input type="radio" name="meal" value="salmon" id="salmon">
+            <label for="salmon">Salmon</label>
+
+            <input type="radio" name="meal" value="gluten-free" id="gluten-free">
+            <label for="gluten-free">Gluten-Free Option</label>
+
+            <input type="radio" name="meal" value="vegan" id="vegan">
+            <label for="vegan">Vegan Option</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
     
-    <fieldset>
-        <legend>Preferred Pronoun</legend>
-       
-        <input type="radio" name="pronoun" id="pronoun" value="he">
-        <label for="he">he</label>
-
-        <input type="radio" name="pronoun" id="pronoun" value="she">
-        <label for="she">she</label>
-
-        <input type="radio" name="pronoun" id="pronoun" value="they">
-        <label for="they">they</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Contact Information</legend>
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-
-        <label for="phone-numb er">Phone Number</label>
-        <input type="text" name="phone-number" id="phone-number" placeholder="(xxx)-(xxx)-(xxxx)">
-    </fieldset>
-
-    <fieldset>
-        <legend>Swag Shirt Selection</legend>
-
-        <label for="shirt-style">T-Shirt Style</label>
-        <select name="shirt-style" id="shirt-style">
-            <option value="" hidden disabled selected>Select Shirt Style</option>
-            <option value="fitted">Fitted</option>
-            <option value="unisex">Unisex</option>
-            <option value="kids">Kids</option>
-        </select>
-
-        <label for="shirt-size">T-Shirt Size</label>
-        <select name="shirt-size" id="shirt-size">
-            <option value="" hidden disabled selected>Select Shirt Size</option>
-            <option value="x-small">X-Small</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="x-large">X-Large</option>
-        </select>
-    
-
-        <label for="shirt-color">T-Shirt Color</label>
-        <select name="shirt-color" id="shirt-color">
-            <option value="" hidden disabled selected>Select Shirt Color</option>
-            <option value="black">Black</option>
-            <option value="gray">Gray</option>
-            <option value="white">White</option>
-        </select>
-    </fieldset>
-
-    <fieldset>
-        <legend>Number of Guests</legend>
-
-        <label for="guest-number">Guests</label>
-        <input type="number" name="guest-number" id="guest-number">
-    </fieldset>
-
-    <fieldset>
-        <legend>Meal Selection</legend>
-
-        <input type="radio" name="meal" value="steak" id="steak">
-        <label for="steak">Steak</label>
-
-        <input type="radio" name="meal" value="salmon" id="salmon">
-        <label for="salmon">Salmon</label>
-
-        <input type="radio" name="meal" value="gluten-free" id="gluten-free">
-        <label for="gluten-free">Gluten-Free Option</label>
-
-        <input type="radio" name="meal" value="vegan" id="vegan">
-        <label for="vegan">Vegan Option</label>
-    </fieldset>
-<script type="module" src="js/app.js"></script>
-<script type="module" src="js/event-api.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <!-- <script type="module" src="js/guests-api.js"></script>
+    <script type="module" src="js/registration-form.js"></script> -->
 
 </body>
 </html>
