@@ -30,7 +30,10 @@ const itemForm = {
             attendee.food = elements.meal.value;
             attendee.numGuests = elements.guests.value;
 
+            //call the callback with new item
             onAdd(attendee);
+
+            form.reset();
         });
     }
 
