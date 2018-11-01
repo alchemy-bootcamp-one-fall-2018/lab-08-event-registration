@@ -44,7 +44,7 @@ const formData = {
                 // checks if the box is checked, push our NEWLY created array as a VALUE to our main Array
                 
                 if(checkPref.checked === true){
-                    personInfo.preference.push(checkPref);
+                    personInfo.preference.push(checkPref.value);
                 }
             }
             // creates the following KEYS within out Array and adds them to the array with their respective value 
