@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Registration</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/registration-form.css">
 </head>
 <body>
-    
+
     <main class="hidden">
         <h1>Event Registration Form:</h1>
         <form id="event-registration">
@@ -19,24 +19,24 @@
             <label for="email">Email address:</label>
             <input type="text" name="email" id="email" required>
 
-            <fieldset>
-                <legend>
+            <fieldset class = "set">
+                <legend class = "legend">
                     Preferred pronouns:
                 </legend>
             
-                    <input required type="radio" id="him" value="him" name="pronoun">
+                    <input type="radio" id="him" value="him" name="pronoun">
                     <label for="him">Him</label>
 
-                    <input required type="radio" id="her" value="her" name="pronoun">
+                    <input type="radio" id="her" value="her" name="pronoun">
                     <label for="her">Her</label>
 
-                    <input required type="radio" id="they" value="they" name="pronoun">
+                    <input type="radio" id="they" value="they" name="pronoun">
                     <label for="they">They</label>
 
             </fieldset>
 
-            <fieldset>
-                <legend>
+            <fieldset class = "set">
+                <legend class = "legend">
                     Reserve your T-shirt!
                 </legend>
                     <label for="shirt-size">Size:</label>
@@ -70,8 +70,8 @@
 
             </fieldset>
 
-            <fieldset>
-                <legend>
+            <fieldset class = "set">
+                <legend class = "legend">
                     Number of guests:
                 </legend>
             
@@ -89,8 +89,8 @@
 
             </fieldset>
 
-            <fieldset>
-                <legend>
+            <fieldset class = "set">
+                <legend class = "legend">
                     What kind of pizza:
                 </legend>
             
@@ -106,8 +106,11 @@
             </fieldset>
 
             <button>RSVP now!</button>
+
+            <p id="message"></p>
         </form>
     </main>
 
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

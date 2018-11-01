@@ -1,10 +1,35 @@
 
 const form = document.getElementById('event-registration');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const pronoun = document.getElementById('pronoun');
-const shirtSize = document.getElementById('shirt-size');
-const shirtStyle = document.getElementById('shirt-style');
-const shirtColor = document.getElementById('shirt-color');
-const guests = document.getElementById('guests');
-const meal = document.getElementById('meal');
+const message = document.getElementById('message');
+
+const registrationForm = {
+    init(onAdd) {
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const elements = form.elements;
+
+            const guest = {};
+
+            guest.name = elements['name'].value;
+            guest.email = elements['email'].value;
+            guest.pronoun = elements['pronoun'].value;
+            guest.shirtSize = elements['shirt-size'].value;
+            guest.shirtStyle = elements['shirt-style'].value;
+            guest.shirtColor = elements['shirt-color'].value;
+            guest.guests = elements['guests'].value;
+            guest.meal = elements['meal'].value;
+
+            onAdd(guest);
+
+            message.textContent = 'Thanks for your RSVP.';
+
+            form.reset();
+
+        });
+
+    }
+};
+
+export default registrationForm;
