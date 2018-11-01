@@ -45,7 +45,7 @@ h1, h2 {
 }
 
 @media (min-width: 700px) {
-    
+
     #firstName {
         width: 20%;
     }
@@ -56,6 +56,16 @@ h1, h2 {
 
     fieldset {
         width: 50vw;
+    }
+
+    .event {
+        width: 50%;
+        padding-bottom: 40px;
+    }
+
+    #events {
+        display: flex;
+        width: 110vw;
     }
 }
 /* background colors, unneeded
