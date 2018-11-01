@@ -6,4 +6,3 @@ import infoApi from './event-api.js';
 // localStorage.removeItem('attendees');
 
 getInfo.init();
-// console.log(infoApi.getStoredInfo());

@@ -35,6 +35,7 @@ const getInfo = {
             });
 
             infoApi.add(getInfo.info);
+            console.log('ingo in reg file', getInfo.info);
             // console.log(infoApi.getStoredInfo());
         });
         

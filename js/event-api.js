@@ -9,29 +9,38 @@ import getInfo from './registration-form.js';
 
 // export default returnInfo;
 
-let attendees = [JSON.parse(localStorage.getItem('attendees'))];
+let attendees = [readStorage()];
 
 console.log('initial attendees', attendees);
 
-saveInfo();
+readStorage();
 
 function saveInfo() {
     localStorage.setItem('attendees', JSON.stringify(attendees));
+
+    console.log('after storing', JSON.parse(localStorage.getItem('attendees')));
+}
+
+function readStorage() {
+    JSON.parse(localStorage.getItem('attendees'));
 }
 
 const infoApi = {
+    getStoredInfo() {
+        readStorage();
+    },
+
     add(item) {
-        if(attendees[0]) {
+        if(attendees) {
+            console.log('if in');
             attendees.push(item);
         } else {
+            console.log('not in');
             attendees = item;
         }
         saveInfo();
-    },
-
-    getStoredInfo() {
-        JSON.parse(localStorage.getItem('attendees'));
     }
+
 };
 
 export default infoApi;
