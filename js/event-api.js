@@ -1,20 +1,20 @@
-let registration = [];
+let registration =
 
-function saveGuestInfo() {
-    localStorage.setRegistration('guestInfo', JSON.stringify(guestInfo));
-}
+function saveAddGuest() {
+    localStorage.setRegistration('addGuest', JSON.stringify(addGuest));
+};
 
-const guestInfoApi = {
-    // getAll() {
-    //     const json = localStorage.getGuestInfo('guestInfo');
-    //     if(json) {
-    //         guestInfo = JSON.parse(json);
-    //     }   
-    // }
-    add(guestInfo) {
-        guestInfo.push(guestInfo);
-        saveGuestInfo();
+const addGuestApi = {
+    getAll() {
+        const json = localStorage.getAddGuest('addGuest');
+        if(json) {
+            addGuest = JSON.parse(json);
+        }   
+    },
+    add(addGuest) {
+        addGuest.push(addGuest);
+        saveAddGuest();
     },
 };
 
-export default guestInfoApi;
+export default addGuestApi;
