@@ -1,14 +1,14 @@
-let items = [];
+let attendees = [];
 
-function saveItems() {
-    localStorage.setItem('items', JSON.stringify(items));
+function saveAttendees() {
+    localStorage.setItem('attendees', JSON.stringify(attendees));
 }
 
-const itemsApi = {
-    add(item) {
-        items.push(item);
-        saveItems();
+const eventApi = {
+    add(attendee) {
+        attendees.push(attendee);
+        saveAttendees();
     }
 };
 
-export default itemsApi;
+export default eventApi;
