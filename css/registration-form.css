@@ -1,0 +1,33 @@
+
+
+.fieldsetPadding {
+    margin: 30px;
+    height: 50px;
+    width: 33%;
+}
+
+#personalInfoFieldset {
+    margin: 30px 0px 0px 30px;
+    width: 33%;
+}
+
+.inputPadding {
+    margin: 8px;
+}
+
+#mealsFieldset {
+    height: 100px;
+    width: 33%;
+    margin-left: 30px;
+}
+
+#shirtFieldset {
+    height:60px;
+    width: 33%;
+    margin: 30px;
+}
+
+button {
+    margin-left: 30px;
+    padding:5px;
+}
