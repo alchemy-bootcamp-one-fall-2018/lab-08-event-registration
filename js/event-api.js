@@ -1,13 +1,7 @@
-// import getInfo from './registration-form.js';
-
 let attendees = [];
-
-console.log('initial storage', readStorage());
 
 function saveInfo() {
     localStorage.setItem('attendees', JSON.stringify(attendees));
-
-    console.log('after storing read', readStorage());
 }
 
 function readStorage() {
