@@ -1,0 +1,26 @@
+body {
+    background-image: opacity 
+}
+
+fieldset {
+    /* border-width: 0; */
+    width: 50%;
+}
+
+input[type="text"] {
+    border: 2px solid gray;
+}
+
+select {
+    width: 10vw;
+}
+  
+input[type="text"] {
+    display: block;
+    width: 49vw;
+    margin: 2px;
+}
+
+.errors {
+    color: red;
+}

@@ -1,7 +1,7 @@
 import itemsApi from './items-api.js';
-import itemForm from './items-form.js';
+import itemForm from './item-form.js';
 
-itemForm.init(function(item) {
-    itemsApi.add(item);
+itemForm.init(function(creature) {
+    itemsApi.add(creature);
 });
 
