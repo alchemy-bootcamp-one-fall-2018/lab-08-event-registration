@@ -1,18 +1,26 @@
 
 h2{
-    text-align:center;
+    text-align:center; <!--booger-->
+    color: white;
 }
 h3{
     text-align: left;
 }
+.bg-img {
+    background-image: url("http://pdxpopnow.com/wp-content/uploads/2018/03/Foot-Pedal.jpg");
+    background-position:50% 50%;
+    padding: 20px 20px 20px 20px;
+}
+    
+  
 form{
     display:block;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    /* background-color: rgb(127, 255, 212, .3); */
+    background-color: rgb(127, 255, 212, .3);
     padding: 20px 20px 20px 20px;
-    width:50%;
-    background-image: url("./img/Foot-Pedal.jpg")
+    /* width:50%; */
+    
 }
 fieldset{
     display:inline-flex;
