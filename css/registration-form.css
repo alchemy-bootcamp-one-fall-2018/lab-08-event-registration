@@ -1,0 +1,59 @@
+#event-application {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+
+fieldset {
+    width: 85vw;
+}
+
+#firstName {
+    width: 60%;
+    text-align: center;
+} 
+
+#lastName {
+    width: 60%;
+    text-align: center;
+} 
+
+
+#events {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.event {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+
+    #firstName {
+        width: 20%;
+    }
+
+    #lastName {
+        width: 20%;
+    }
+
+    fieldset {
+        width: 50vw;
+    }
+
+    .event {
+        width: 50%;
+        padding-bottom: 40px;
+    }
+
+    #events {
+        display: flex;
+        width: 110vw;
+    }
+}
