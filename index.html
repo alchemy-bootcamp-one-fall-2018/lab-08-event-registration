@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,6 @@
         </fieldset>
 
         <fieldset> 
-
             <label for="guestNumber">Number of additional guests:</label>
             <select name="guestNumber" id="guestNumber">
                 <option value="0">0</option>
@@ -30,6 +30,17 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
+        </fieldset>
+
+        <fieldset> 
+            <label for="shirtSize">T-Shirt Size:</label>
+            <select name="shirtSize" id="shirtSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">XL</option>
+            </select>
+            <input type="color">
         </fieldset>
 
         <fieldset> 
@@ -45,6 +56,22 @@
             <div>
                 <label for="heNoun">They</label>
                 <input type="radio" id="theyNoun" value="theyNoun" name="pronoun">
+            </div>
+        </fieldset>
+        
+        <fieldset> 
+            <legend>Dietary Choice</legend>
+            <div>
+                <label for="diet"> Vegan</label>
+                <input type="radio" id="diet1" value="vegan" name="diet">
+            </div>
+            <div>
+                <label for="diet"> Gluten Free</label>
+                <input type="radio" id="diet2" value="gluten-free" name="diet">
+            </div>
+            <div>
+                <label for="diet">Beer</label>
+                <input type="radio" id="diet3" value="beer" name="diet">
             </div>
         </fieldset>
 
@@ -64,10 +91,8 @@
                 <input type="checkbox" name="preference" id="both" value="both">
             </div>
         </fieldset>
-
-
         <fieldset>
-                <legend>Do to believe Keenan was robbed of his win at gi worlds 2018?</legend>
+                <legend>Do to believe Keenan was robbed of his win at gi world championships 2018?</legend>
     
                     <div>
                     <label for="wasRobbed">Yes</label>
@@ -80,8 +105,8 @@
                     </div>
 
                     <div>
-                    <label for="explain"> Explain your opinion: </label>
-                    <textarea name="explain" id="explain" cols="30" rows="10"></textarea>
+                    <label for="explain"> Elaborate on your opinion: </label> <br>
+                    <textarea name="explain" id="explain" cols="80" rows="10" heigth="50px" width= "70px"></textarea>
                     </div>
 
         </fieldset>

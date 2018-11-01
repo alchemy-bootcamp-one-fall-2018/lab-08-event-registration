@@ -7,7 +7,7 @@ let dataArray = [];
 
 //create an object aka a variable with a function which becomes the object. saveData is the object that is placing the collected data into local storage
 function saveData() {
-    localStorage.setItem('data', Json.stringify(dataArray));
+    localStorage.setItem('data', JSON.stringify(dataArray));
 
 }
 
