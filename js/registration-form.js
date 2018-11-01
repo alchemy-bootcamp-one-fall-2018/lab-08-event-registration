@@ -21,6 +21,6 @@ const registrationForm = {
 
 
     }
-}
+};
 
 export default registrationForm;
