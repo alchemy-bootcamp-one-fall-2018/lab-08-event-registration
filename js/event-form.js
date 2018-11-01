@@ -10,9 +10,6 @@ const eventForm = {
 
             item.addEventListener('change', function() {
                 if(this.checked) events.pronoun = this.value;
-                // background-colors, unneeded
-                // form.classList.forEach(item => form.classList.remove(item));
-                // form.classList.add(this.value);
             });
         });
 

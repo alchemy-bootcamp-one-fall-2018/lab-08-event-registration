@@ -13,14 +13,10 @@ function makeEvent(event) {
         </li>
     `;
 
-    // A. Create template element to convert string to DOM
     const template = document.createElement('template');
 
-    // B. Assign innerHTML property
     template.innerHTML = html;
 
-    // C. Return the `content` property which is the dom
-    // (In a DocumentFragment)
     return template.content;
 }
 
