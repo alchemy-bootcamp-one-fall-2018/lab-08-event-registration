@@ -22,8 +22,14 @@ const itemForm = {
 
             //set up the attendee's pronoun
             attendee.pronoun = elements.pronoun.value;
-
+            //sets up attendee's shirt options
             attendee.shirtSize = elements['tshirt-size'].value;
+            attendee.shirtColor = elements['tshirt-color'].value;
+            
+            //sets up attendee's guests and meal selections
+            attendee.food = elements.meal.value;
+            attendee.numGuests = elements.guests.value;
+
             onAdd(attendee);
         });
     }
