@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/registration-form.css" />
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <h2>Corn Maze Volunteer Registration</h2>
+        <form id="volunteer-registration">
+            <label id="name-prompt">Name:</label>
+            <input type="text" required name="name" id="name-entered">
+            <label id="pronoun-prompt">Preferred Pronoun:</label>
+            <input type="text" required name="pronoun" id="pronoun-entered">
+            <label id="email-prompt">Email:</label>
+            <input type="email" required name="email" id="email-entered">
+            <fieldset>
+                <legend>
+                    <h3>Do a Thing, Get a T-Shirt!</h3>
+                </legend>
+                <h4 id="size">Size</h4>
+                <input type="radio" required id="small" name="size" value="small">
+                <label for="small">Small</label>
+                <input type="radio" required id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" required id="large" name="size" value="large">
+                <label for="large">Large</label>
+                <input type="radio" required id="x-large" name="size" value="x-large">
+                <label for="x-large">X-Large</label>
+                <div>
+                    <h4 id="style">Style</h4>
+                    <input type="radio" required id="unisex" name="style" value="unisex">
+                    <label for="unisex">Unisex</label>
+                    <input type="radio" required id="fitted" name="style" value="fitted">
+                    <label for="fitted">Fitted</label>
+                    <input type="radio" required id="kids" name="style" value="kids">
+                    <label for="kids">Kids</label>
+                </div>
+                <div>
+                    <br>
+                    <label for="color"><strong>Color:&nbsp</strong></label>
+                    <select id="color" name="color">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>How Many Will You Bring?</h3>
+                </legend>
+                <label for="number">Guest Count:   </label>
+                <input type="range" name="number" id="number" min="1" max="12">
+                <span id="guests-display">12</span>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Meal Selection</h3>
+                </legend>
+                <label for="meal-selection">Meal Choice:    </label>
+                <select name="meal" id="meal-selection">
+                    <option value="field-roast">Field Roast</option>
+                    <option value="impossible-burger">Impossible Burger</option>
+                    <option value="tempeh-burger">Tempeh Burger</option>
+                </select>
+            </fieldset>
+            <div>
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+            <p id="message"></p>
+        </form>
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
