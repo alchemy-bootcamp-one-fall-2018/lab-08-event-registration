@@ -30,12 +30,12 @@
 
                     <div class="inputPadding"> 
                         <label for="name">Pronoun:</label>
-                        <input type="text" name="name" id="name" placeholder="he/she/they" required>
+                        <input type="text" name="pronoun" id="pronoun" placeholder="he/she/they" required>
                     </div>
 
                     <div class="inputPadding">
                         <label for="name">Email:</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="email" id="email" required>
                      </div>
                 </fieldset>
 
@@ -57,7 +57,7 @@
             
                 <fieldset class="fieldsetPadding">
                     <legend id="groupSizeLegend">Group Size</legend>
-                    <input type="number" min="1" max="6" name="familySize" id="familySize">
+                    <input type="number" min="1" max="6" name="groupSize" id="groupSize">
                 </fieldset>
 
                 <fieldset id="mealsFieldset">
@@ -66,35 +66,35 @@
                     <div class="inputPadding">
                         <label for="breakfast">Breakfast:</label>
                         <select name="breakfast" id="breakfast">
-                            <option value="fruit salad">pancakes</option>
-                            <option value="wild rice mix">fruit smoothie</option>
+                            <option value="pancakes">pancakes</option>
+                            <option value="fruit smoothie">fruit smoothie</option>
                             <option value="omlette">omlette</option>
                         </select>
                     </div>
 
                     <div class="inputPadding">
-                        <label for="breakfast">Lunch:</label>
-                        <select name="breakfast" id="breakfast">
-                            <option value="fruit salad">veggie burger</option>
-                            <option value="wild rice mix">french fries</option>
-                            <option value="omlette">coconut curry soup</option>
+                        <label for="Lunch">Lunch:</label>
+                        <select name="lunch" id="lunch">
+                            <option value="veggie burger">veggie burger</option>
+                            <option value="french fries">french fries</option>
+                            <option value="coconut curry soup">coconut curry soup</option>
                         </select>
                     </div>
 
                     <div class="inputPadding">
-                        <label for="breakfast">Dinner:</label>
-                        <select name="breakfast" id="breakfast">
-                            <option value="fruit salad">lasgana</option>
-                            <option value="wild rice mix">Veggies and rice</option>
-                            <option value="omlette">kale and avocado salad</option>
+                        <label for="Dinner">Dinner:</label>
+                        <select name="dinner" id="dinner">
+                            <option value="lasgana">lasgana</option>
+                            <option value="veggies and rice">veggies and rice</option>
+                            <option value="kale and avocado salad">kale and avocado salad</option>
                         </select>
                     </div>
 
                 </fieldset>
 
-                <fieldset id="tshirtFieldset">
+                <fieldset id="shirtFieldset">
                     <legend>T-Shirts!</legend>
-                    <select name="tshirtsize" id="tshirtsize">
+                    <select name="shirtSize" id="shirtSize">
                         <option value="small">small</option>
                         <option value="medium">medium</option>
                         <option value="large">large</option>
@@ -107,13 +107,12 @@
 
 
 
-
-            </form>
-
-
-
-
-        </main>
+                </form> 
+            </main>
+            
+            <footer>
+                <button onsubmit="">Register for Space Travel!!</button>
+            </footer>
         
 
 
