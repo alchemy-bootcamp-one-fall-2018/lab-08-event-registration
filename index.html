@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration-form.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+    </header>
+    <main>
+        <div id="event-description-div">
+            <h2>Volunteer to Phone Bank - Help spread the Vote!</h2>
+            <p>We need your help this Saturday to call local voters and ensure they're registered to vote.</p>
+        </div>
+        <section id="event-form-section">
+            <form id="event-form">
+                <fieldset>
+                <label>
+                    Name
+                    <input type="text" name="name" id="name" width="5px" placeholder="First Last" required>
+                </label>
+                </fieldset>
+                <fieldset>
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                </label>
+                </fieldset>
+                <fieldset>
+                <label>
+                    Pronoun
+                    <input type="text" name="pronoun" id="pronoun" placeholder="he/his, she/her, they/them" required>
+                </label>
+                </fieldset>
+                <fieldset>
+                <label>
+                    Number of guests
+                    <input type="number" name="guests" min="1" pattern="[-+]?[0-9]" id="number-of-guests" required>
+                </label>
+                </fieldset>
+                <fieldset>
+                <label>
+                    Select a meal
+                </label>
+                <select id="meal-selection" name="meal" required>
+                    <option disabled selected>Select a meal</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="tacos">Tacos</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                <label>
+                    Select t-shirt size
+                </label>
+                <select id="shirt-size" required name="shirt">
+                    <option disabled selected>Select a t-shirt size</option>
+                        <optgroup label="Youth">
+                            <option value="youth-small">Small</option>
+                            <option value="youth-medium">Medium</option>
+                            <option value="youth-large">Large</option>
+                        </optgroup>
+                        <optgroup label="Adult">
+                            <option value="adult-small">Small</option>
+                            <option value="adult-medium">Medium</option>
+                            <option value="adult-large">Large</option>
+                        </optgroup>
+                </select><br>
+                <label>
+                    Select t-shirt color
+                </label>
+                <select id="shirt-color" name="shirt-color" required>
+                        <option disabled selected>Select a t-shirt color</option>
+                        <option value="pizza">Red</option>
+                        <option value="burger">Green</option>
+                        <option value="tacos">Blue</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <button id="submit-button">Go!</button>
+                </fieldset>
+                    <div id="sect-submit-button">
+                        <p id="submit-message-response"></p>
+                    </div>
+                    <table id="form-submission-table">
+                        <thead>
+                            <tr id="column-headings" class="hidden">
+                                <td>Name</td>
+                                <td>Email</td>
+                                <td>Pronoun</td>
+                                <td>Number of guests</td>
+                                <td>Meal selection</td>
+                                <td>Shirt size</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </form>
+        </section>
+    </main>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

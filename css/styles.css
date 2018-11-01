@@ -1,0 +1,56 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0px auto;
+}
+
+/* ----------- Body > Header styles ----------- */
+body {
+    background-color: purple;
+    /* margin: 3em auto; */
+}
+
+header {
+    background-color: purple;
+}
+
+h1 {
+    background-color: purple;
+    color: red;
+    font-style: italic;
+    font-size: 40px;
+    padding: 12px;
+    text-align: center;
+}
+
+/* ----------- Body > Main styles ----------- */
+h2 {
+    color: purple;
+    text-align: center;
+}
+
+main {
+    background-color: purple;
+    width: 100%;
+}
+
+div {
+    padding: 25px auto;
+    background-color: red;
+    height: 100%;
+}
+
+h3 {
+    color: purple;
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    color: purple;
+    text-align: center;
+}
+
+/* ------- used for form table results ---------- */
+.hidden {
+    display: none;
+}
