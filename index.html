@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Creatures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+</head> 
+    <body>
+        <header>
+            <h1>Coding Creatures Codathon</h1>
+            <img src="wolf.jpg" alt="werewolf"/>
+        </header>
+
+        <main class="hidden">
+            <h1>Coding Creatures</h1>
+            <form id="coding-creatures">
+                    <label for="name">Name/Pronoun/Email</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+
+        
+                    <fieldset>
+                        <legend>
+                            Are you willing to work with humans?
+                        </legend>
+        
+                        <input required type="radio" id="yes" value="yes" name="work">
+                        <label for="yes">Yes</label>
+        
+                        <input required type="radio" id="no" value="no" name="work">
+                        <label for="no">No</label>
+        
+                    </fieldset>
+        <br>
+
+                    <fieldset>
+                        <legend>
+                            Number of Creatures Attending?
+                        </legend>
+
+                        <input required type="radio" id="one" value="one" name="attending">
+                        <label for="one">One</label>
+
+                        <input required type="radio" id="two" value="two" name="attending">
+                        <label for="two">Two</label>
+
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>
+                            Select a Meal
+                        </legend>
+
+                        <input required type="radio" id="liver" value="liver" name="meal">
+                        <label for="liver">Liver</label>
+
+                        <input required type="radio" id="brain" value="brain" name="meal">
+                        <label for="brain">Brain</label>
+                    </fieldset>
+                    <br>
+                    
+                    <fieldset>
+                        <legend>
+                            Free Event T-Shirt, Select Size:
+                        </legend>
+        
+                        <div>
+                            <input name="size" value="creature" type="checkbox" id="creature">
+                            <label for="creature">Creature</label>
+                        </div>
+        
+                        <div>
+                            <input name="size" value="human" type="checkbox" id="human">
+                            <label for="human">Human</label>
+                        </div>
+        
+                        <div>
+                            <input name="size" value="hybrid" type="checkbox" id="hybrid">
+                            <label for="hybrid">Hybrid</label>
+                        </div>
+                    </fieldset>
+                        <br>
+
+        
+                    <fieldset>
+                        <legend>
+                            T-Shirt Color
+                        </legend>
+                            <label for="color">Select Color </label>
+                            <select id="color" name="color" required>
+                                <option value="" hidden disabled selected>Color</option>
+                                <option value="black">Cauldron Black</option>
+                                <option value="red">Shark Week Red</option>
+                                <option value="green">Alien Invasion Green</option>
+                                <option value="white">Casper White</option>
+                            </select>
+                        </fieldset>
+        
+                    <div>
+                        <button>Submission</button>
+                    </div>
+        
+                    <p id="message"></p>
+                </form>
+            </main>
+        
+            <script type="module" src="js/app.js"></script>
+            <script type="module" src="js/item-form.js"></script>
+            <script type="module" src="js/items-api.js"></script>
+        </body>
+        </html>
+
+
+        </main>
+    
+</body>
+</html>
+
