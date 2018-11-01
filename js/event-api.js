@@ -7,7 +7,7 @@ function saveItems() {
 const itemsApi = {
     add(item) {
         items.push(item);
-        saveItems; 
+        saveItems(); 
     }
 }; 
 

@@ -28,7 +28,6 @@ const itemForm = {
             attendee.shirt = elements.shirt.value; 
 
             attendee.media = media.value;
-            console.log("message", media.value);
             
             onAdd(attendee); 
 
