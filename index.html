@@ -21,26 +21,26 @@
                 <legend>
                     How old are you?
                 </legend>
-                <input required type="number" id="age-text">
+                <input required type="number" id="age-text" name="age">
             </fieldset>
 
             <fieldset>
                 <legend>
                     What faction do you represent?
                 </legend>
-                <input required type="radio" id="horde" value="horde" name="HAButton">
+                <input required type="radio" id="horde" value="Horde" name="HAButton">
                 <label for="horde">For the HORDE!</label>
                 
-                <input required type="radio" id="alliance" value="alliance" name="HAButton">
+                <input required type="radio" id="alliance" value="Alliance" name="HAButton">
                 <label for="alliance">For the ALLIANCE!</label>
             </fieldset>
 
             <fieldset>
                 <legend>
-                    What level are you?
+                    What level is your main character?
                 </legend>
                 <label for="level">Level:</label>
-                <input type="number" id="level" required min="1" max="120" maxlength="3">
+                <input type="number" id="level" required min="1" max="120" maxlength="3" name="level">
             </fieldset>
 
             <fieldset>
@@ -51,29 +51,29 @@
                 <select id="main-race" name="main-race" required>
                     <option value="" hidden disabled selected>Select Race</option>
                     <optgroup label="Horde">
-                        <option value="orc">Orc</option>
-                        <option value="undead">Undead</option>
-                        <option value="tauren">Tauren</option>
-                        <option value="troll">Troll</option>
-                        <option value="blood-elf">Blood Elf</option>
-                        <option value="goblin">Goblin</option>
-                        <option value="pandaren">Pandaren</option>
-                        <option value="highmountain-tauren">Highmountain Tauren</option>
-                        <option value="maghar-orc">Mag'har Orc</option>
-                        <option value="nightborne">Nightborne</option>
+                        <option>Orc</option>
+                        <option>Undead</option>
+                        <option>Tauren</option>
+                        <option>Troll</option>
+                        <option>Blood Elf</option>
+                        <option>Goblin</option>
+                        <option>Pandaren</option>
+                        <option>Highmountain Tauren</option>
+                        <option>Mag'har Orc</option>
+                        <option>Nightborne</option>
                     </optgroup>
 
                     <optgroup label="Alliance">
-                            <option value="human">Human</option>
-                            <option value="dwarf">dwarf</option>
-                            <option value="night-elf">Night Elf</option>
-                            <option value="gnome">Gnome</option>
-                            <option value="draenei">Draenei</option>
-                            <option value="worgen">Worgen</option>
-                            <option value="pandaren">Pandaren</option>
-                            <option value="dark-iron-dwarf">Dark Iron Dwarf</option>
-                            <option value="lightforged-draenei">Lightforged Draenei</option>
-                            <option value="void-elf">Void Elf</option>
+                        <option>Human</option>
+                        <option>dwarf</option>
+                        <option>Night Elf</option>
+                        <option>Gnome</option>
+                        <option>Draenei</option>
+                        <option>Worgen</option>
+                        <option>Pandaren</option>
+                        <option>Dark Iron Dwarf</option>
+                        <option>Lightforged Draenei</option>
+                        <option>Void Elf</option>
                     </optgroup>
                 </select>
             </fieldset>
@@ -86,20 +86,20 @@
                 <select id="main-class" name="main-class" required>
                     <option value="" hidden disabled selected>Select Class</option>
                     <optgroup label="Classes">
-                        <option value="warrior">Warrior</option>
-                        <option value="paladin">Paladin</option>
-                        <option value="hunter">Hunter</option>
-                        <option value="rogue">Rogue</option>
-                        <option value="priest">Priest</option>
-                        <option value="shaman">Shaman</option>
-                        <option value="mage">Mage</option>
-                        <option value="warlock">Warlock</option>
-                        <option value="monk">Monk</option>
-                        <option value="druid">Druid</option>
+                        <option>Warrior</option>
+                        <option>Paladin</option>
+                        <option>Hunter</option>
+                        <option>Rogue</option>
+                        <option>Priest</option>
+                        <option>Shaman</option>
+                        <option>Mage</option>
+                        <option>Warlock</option>
+                        <option>Monk</option>
+                        <option>Druid</option>
                     </optgroup>
                     <optgroup label="Hero Classes">
-                        <option value="death-knight">Death Knight</option>
-                        <option value="demon-hunter">Demon Hunter</option>
+                        <option>Death Knight</option>
+                        <option>Demon Hunter</option>
                     </optgroup>
                 </select>
             </fieldset>
@@ -110,7 +110,7 @@
                 </legend>
                 
                 <div>
-                    <input type="checkbox" value="damage-dps" name="role" id="damage-dps">
+                    <input type="checkbox" value="damage" name="role" id="damage">
                     <label for="role">Damage (DPS)</label>
                 </div>
                 <div>
@@ -118,7 +118,7 @@
                     <label for="role">Tank</label>
                 </div>
                 <div>
-                    <input type="checkbox" value="healing" name="role" id="healing">
+                    <input type="checkbox" value="heal" name="role" id="healing">
                     <label for="role">Healing</label>
                 </div>
             </fieldset>
