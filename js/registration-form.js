@@ -4,7 +4,11 @@ const registrationForm = {
     init() {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            //console.log(form.elements);
+            const elements = form.elements;
+            const info = {
+                info.name = elements.name.value;
+            }
+            // console.log(form.elements);
         });
     }
 };
