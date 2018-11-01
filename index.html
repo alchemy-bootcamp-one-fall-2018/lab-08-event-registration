@@ -42,6 +42,7 @@
 
             <div class="shirts">
                 <h2>Name your shirt-swag!</h2>
+                <h3>pick one from each option</h3>
                 
                 <select id="shirttype" name="shirttype" required>
                     <option value="kids-shirt">Kids</option>
@@ -58,7 +59,39 @@
                     <option value="xxl">XX Large</option>
                 </select>
 
+                <select id="shirtcolor" name="color" required>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="pink">Pink</option>
+                    <option value="black">Black</option>
+                </select>
             </div>
+
+            <div class = "guests">
+                <h2>How many are coming?</h2>
+                <input type="number" name="guests" id="guests" min="1" max="5">
+            </div>
+
+            <div class = "meal">
+                <h2>What dinner would you like to share with your guest(s)?</h2>
+                <fieldset>
+                    <input type="checkbox" id="chicken" name="maindish" value="chicken"/>
+                    <label for="chicken">Chicken</label>
+                    <input type="checkbox" id="vegetarian" name="maindish" value="vegetarian"/>
+                    <label for="vegetarian">Vegetarian</label>
+                </fieldset>
+                <h2>Do you have dietary restictions?</h2>
+                <fieldset>
+                    <input type="checkbox" id="glutenfree" name="restrictions" value="glutenfree"/>
+                    <label for="glutenfree">Gluten Free</label>
+                    <input type="checkbox" id="nuts" name="restrictions" value="nuts"/>
+                    <label for="nuts">Nuts</label>
+                    <input type="checkbox" id="other" name="restrictions" value="other"/>
+                    <label for="other">Other, please email me</label>
+                </fieldset>
+            </div>
+
             <button id="submitbutton">Submit</button>
         </form>
     </main>
