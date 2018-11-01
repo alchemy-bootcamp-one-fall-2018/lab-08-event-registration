@@ -5,12 +5,12 @@ import infoApi from './event-api.js';
 const form = document.getElementById('register');
 
 
-const getInfo = {
+let getInfo = {
     
     info: {},
     
     init() {
-        form.addEventListener('submit', function() {
+        form.addEventListener('submit', function(event) {
             event.preventDefault();
             const select = document.querySelectorAll('option:checked');
             const checked = document.querySelectorAll('input:checked');
@@ -34,9 +34,7 @@ const getInfo = {
                 }
             });
 
-            infoApi.add(getInfo.info);
-            console.log('ingo in reg file', getInfo.info);
-            // console.log(infoApi.getStoredInfo());
+            infoApi.init(getInfo.info);
         });
         
     }

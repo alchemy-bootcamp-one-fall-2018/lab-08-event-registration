@@ -1,46 +1,33 @@
-import getInfo from './registration-form.js';
+// import getInfo from './registration-form.js';
 
-// const returnInfo = {
+let attendees = [];
 
-//     init() {
-//         return getInfo.info;
-//     }
-// };
-
-// export default returnInfo;
-
-let attendees = [readStorage()];
-
-console.log('initial attendees', attendees);
-
-readStorage();
+console.log('initial storage', readStorage());
 
 function saveInfo() {
     localStorage.setItem('attendees', JSON.stringify(attendees));
 
-    console.log('after storing', JSON.parse(localStorage.getItem('attendees')));
+    console.log('after storing read', readStorage());
 }
 
 function readStorage() {
-    JSON.parse(localStorage.getItem('attendees'));
+    return JSON.parse(localStorage.getItem('attendees'));
+}
+
+function add(info) {
+    attendees = readStorage();
+    if(attendees) {
+        attendees.push(info);
+    } else {
+        attendees = [info];
+    }
+    saveInfo();
 }
 
 const infoApi = {
-    getStoredInfo() {
-        readStorage();
-    },
-
-    add(item) {
-        if(attendees) {
-            console.log('if in');
-            attendees.push(item);
-        } else {
-            console.log('not in');
-            attendees = item;
-        }
-        saveInfo();
+    init(info) {
+        add(info);
     }
-
 };
 
 export default infoApi;
