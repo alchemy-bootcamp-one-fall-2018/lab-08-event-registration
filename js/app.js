@@ -1,7 +1,9 @@
 'use strict';
 
 import getInfo from './registration-form.js';
+import infoApi from './event-api.js';
 
-//make styles checkboxes
+// localStorage.removeItem('attendees');
 
 getInfo.init();
+// console.log(infoApi.getStoredInfo());

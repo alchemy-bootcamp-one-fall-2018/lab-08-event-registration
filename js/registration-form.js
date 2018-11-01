@@ -1,6 +1,6 @@
 'use strict';
 
-import returnInfo from './event-api.js';
+import infoApi from './event-api.js';
 
 const form = document.getElementById('register');
 
@@ -34,8 +34,8 @@ const getInfo = {
                 }
             });
 
-            console.log(returnInfo.init());
-
+            infoApi.add(getInfo.info);
+            // console.log(infoApi.getStoredInfo());
         });
         
     }
