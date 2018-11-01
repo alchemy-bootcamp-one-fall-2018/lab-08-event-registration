@@ -34,7 +34,7 @@
             </div>
             <div class="name">
                     <label for="name"> Do you have a dog?</label>
-                    <select>
+                    <select name="dogs">
                         <option value="1">1 dog</option>
                         <option value="2">2 dogs</option>
                         <option value="3">3 dogs</option>
@@ -48,11 +48,11 @@
             </div>
             <div id ="phone">
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="tel" id="tel" required>    
+                <input type="tel" name="phone" id="phone" required>    
             </div>
             <div id="toy">
                 <label for="toy">Are you going to bring a toy?</label>
-                <select>
+                <select id="toy">
                     <option value="" disabled selected> Please Select One</option>
                     <option value="frisbee">Frisbee</option>
                     <option value="tennis-ball">Tennis Ball</option>
@@ -63,7 +63,7 @@
             </div>
             <div id="treat">
                 <label for="treat">Treat Preference</label>
-                <select>
+                <select id="treat">
                         <option value="" disabled selected> Please Select One</option>
                         <option value="meat">chicken/pork/beef/lamb</option>
                         <option value="fish">salmon</option>
@@ -74,7 +74,7 @@
             </div>
             <div>
                 <label for="shirt">Please select T-shirt size</label>
-                    <select>
+                    <select id="shirt">
                     <option value="" disabled selected> Please Select One</option>
                     <optgroup label="women">
                         <option value="wssmall"> women's small</option> 
@@ -89,13 +89,14 @@
                         <option value="msxlarge">men's x-large</option>
                 </select>
             </div>
-            <div>
-                <label for="social-media">Please put your dog's social media ie.Facebook,Instagram,Tumblr, etc.</label>
-                <textarea name="social-media" form="social-media" placeholder="Enter Here"></textarea>
+            <div id="media">
+                <label for="social-media">Please put your dog's social media</label>
+                <textarea name="social-media" form="social-media" id="social-media" placeholder="Enter Here"></textarea>
             </div>
             <div>
                 <button>Attending</button>
             </div>
+            <p id="message"></p>
         </form>
     </main>
     

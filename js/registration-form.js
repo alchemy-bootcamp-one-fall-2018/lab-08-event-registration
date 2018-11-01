@@ -1,7 +1,6 @@
 const form = document.getElementById('form-registration');
-const emailForm = document.getElementById('email');
-const phoneForm = document.getElementById('phone'); 
-const mediaForm = document.getElementById('social-media'); 
+const message = document.getElementById('message');
+const media = document.getElementById('social-media');
 
 const itemForm = {
     init(onAdd) {
@@ -13,20 +12,32 @@ const itemForm = {
             const attendee = {}; 
             
             attendee.name = elements.name.value; 
-            console.log('here', attendee.name); 
 
-            attendee.pronoun = elements.pronoun.value;
+            attendee.pronoun = elements.pronoun.value; 
 
-            console.log("hello", attendee.pronoun); 
-           
+            attendee.dogs = elements.dogs.value; 
+
+            attendee.email = elements.email.value;
+
+            attendee.phone = elements.phone.value; 
+
+            attendee.toy = elements.toy.value; 
+
+            attendee.treat = elements.treat.value; 
+
+            attendee.shirt = elements.shirt.value; 
+
+            attendee.media = media.value;
+            console.log("message", media.value);
             
             onAdd(attendee); 
+
+            message.textContent = 'Thanks for your interest! We cannot wait to meet your dog!';
             
-            form.reset(); 
         }); 
-
-
+        
     } 
 }; 
+form.reset(); 
 
 export default itemForm;
