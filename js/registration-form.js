@@ -19,14 +19,18 @@ const registrationForm = {
             
             // gather data, ie:
             registration.firstName = elements['first-name'].value;
-
-            
+            registration.lastName = elements['last-name'].value;
+            registration.email = elements.email.value;
+            registration.pronoun = elements.pronouns.value;
+            registration.size = elements.size.value;
+            registration.style = elements.style.value;
+            registration.color = elements.color.value;
 
             // call the callback with new item
             onAdd(registration);
 
             // use an onscreen message
-            message.textContent = 'Thanks for your interest! We look forward to killing with you!';
+            message.textContent = 'Thanks for your interest! We look forward to meeting you soon!';
             
             form.reset();
 
