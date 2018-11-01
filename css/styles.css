@@ -1,0 +1,25 @@
+body {
+    color: #080808;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* background colors, unneeded
+.she {
+    background-color: #BDBBB0;
+}
+
+.he {
+    background-color: #4FB286;
+}
+
+.theyThem { 
+    background-color: #3C896D;
+} */
+
