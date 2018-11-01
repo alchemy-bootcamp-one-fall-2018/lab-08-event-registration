@@ -29,7 +29,7 @@ const formData = {
             // add the pronoun value to our array 
             // all grouped radio buttons must have the same name!
 
-            personInfo.proNoun = elements.pronoun.value;
+            personInfo.pronoun = elements.pronoun.value;
 
             // creates an array that will be used into our OTHER Array with preference values
 
@@ -47,7 +47,7 @@ const formData = {
                     personInfo.preference.push(checkPref.value);
                 }
             }
-            // creates the following KEYS within out Array and adds them to the array with their respective value 
+            // creates the following KEYS within our Array and adds them to the array with their respective value 
             // Array.KEY === elementfromForm.NameofElement.Value of the element.
 
             personInfo.robbed = elements.wasRobbed.value;
