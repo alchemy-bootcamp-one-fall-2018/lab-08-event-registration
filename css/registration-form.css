@@ -1,0 +1,49 @@
+form {
+    margin: 40px 75px;
+    font-size: 1.2em;
+    font-family: "halant";
+}
+
+fieldset {
+    padding: 10px 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-size: 1.3em;
+    font-family: halant;
+}
+
+input {
+    font-family: halant;
+    font-size: 0.7em;
+    border: 1px solid black;
+    align-content: center; 
+    align-items: center;
+}
+
+.right {
+    margin-right: 25px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select, option {
+    font-family: halant;
+    font-size: 0.8em;
+    margin-right: 15px;
+}
+
+div {
+    display: inline-block;
+}
+
+button {
+    font-size: 1em;
+    font-family: halant;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}

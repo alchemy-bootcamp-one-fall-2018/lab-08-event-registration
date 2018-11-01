@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Halant|Montserrat|Raleway|Nunito+Sans"rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration-form.css">
     <title>Event Registration</title>
 </head>
+
 <body>
-    
-    
     <img src="https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99a036a823f65958ab245848f5091dd7&auto=format&fit=crop&w=1350&q=80" alt="cat background">
     <h1>10th Annual Cat Adoption Team Auction</h1>
    
@@ -30,18 +30,26 @@
         
         <fieldset>
             <legend>Pronouns</legend>
-        
-            <input type="radio" name="pronoun" id="he" value="he/him">
-            <label for="he">He/Him</label>
+           
+            <div>
+                <input type="radio" name="pronoun" id="he" value="he/him">
+                <label for="he">He/Him</label>
+            </div>
 
-            <input type="radio" name="pronoun" id="she" value="she/her">
-            <label for="she">She/Her</label>
+            <div>
+                <input type="radio" name="pronoun" id="she" value="she/her">
+                <label for="she">She/Her</label>
+            </div>
 
-            <input type="radio" name="pronoun" id="they" value="they/them">
-            <label for="they">They/Them</label>
+            <div>
+                <input type="radio" name="pronoun" id="they" value="they/them">
+                <label for="they">They/Them</label>
+            </div>
 
-            <input type="radio" name="pronoun" id="no-answer" value="no-answer">
-            <label for="no-answer">Prefer not to answer</label>
+            <div>
+                <input type="radio" name="pronoun" id="no-answer" value="no-answer">
+                <label for="no-answer">Prefer not to answer</label>
+            </div>
         </fieldset>
 
         <fieldset>
@@ -82,7 +90,6 @@
 
         <fieldset>
             <legend>Number of Guests</legend>
-
             <label for="guest-number">Guests</label>
             <input class="right" type="number" name="guest-number" id="guest-number">
         </fieldset>
