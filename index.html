@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENT REGISTRATION</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registration-form.css">
+</head>
+<body>
+    <form><h3>REGISTRATION FORM</h3>
+        <div>
+            <h3>NAME:</h3>
+            <fieldset>
+                <legend>Surname:</legend>
+                    <input type="radio" value="mr" name="surname" input="mr">
+                    <label for="mr">Mr.</label>
+                    <input type="radio" value="Ms." name="surname" input="ms">
+                    <label for="ms">Ms.</label>
+                    <input type="radio" value="Mx." name="surname" input="mx">
+                    <label for="mx">Mx.</label>
+            </fieldset>
+            <label>First Name:
+            <input type="text">
+            </label>
+            <label>Last Name:
+            <input type="text">
+            </label>
+        </div>
+        <div>
+        <h3>CONTACT:</h3>
+        <label>Phone:
+            <input type="tel" name="usrtel">
+        </label>
+        <label>Email:
+            <input type="email">
+        </label>
+        </div>
+        <div>
+        <h3>ARE YOU BRINGING FRIENDS:</h3>
+        <label>Number of Attendees:
+            <input type="number">
+        </label>
+        </div>
+        <div>
+        <h3>COMMEMORATIVE T SHIRT:</h3>
+        <label>Shirt Size</label>
+            <select> 
+                <optgroup label="KIDS">
+                    <option>Kids Small</option>
+                    <option>Kids Med</option>
+                    <option>Kids Lg</option>
+                </optgroup>
+                <optgroup label="WOMENS">
+                    <option>womens Small</option>
+                    <option>womens Med</option>
+                    <option>womens Lg</option>
+                </optgroup>
+                <optgroup label="MENS">
+                    <option>Mens Small</option>
+                    <option>Mens Med</option>
+                    <option>Mens Lg</option>
+                </optgroup>
+            </select>
+        <label for="shirt">Shirt Color</label>
+        <input type="checkbox">
+        <input type="checkbox">
+        </div>
+        <div class="diet">
+            <h3>Dietary Restrictions:</h3>
+            <fieldset>
+            <legend></legend>
+                <input type="radio" value="none" name="none" input="diet">
+                <label for="mr">NONE</label>
+                <input type="radio" value="vegitarian." name="vegitarian" input="diet">
+                <label for="ms">VEGETARIAN</label>
+                <input type="radio" value="vegan" name="vegan" input="diet">
+                <label for="mx">VEGAN</label>
+            </fieldset>
+        </div>
+        <button>SUBMIT</button>
+     </form>
+</body>
+</html>
