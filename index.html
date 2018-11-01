@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-08 Event Registration</title>
+    <link rel="stylesheet" href="./css/registration-form.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <main>
+        <header>Name of Event</header>
+
+        <form id="form">
+        
+        <section id="name-section">
+            <fieldset>
+                <legend>who is you is?</legend>
+
+                <div>
+                    <label for="first-name">first name: </label>
+                    <input id="first" type="text" size="50">
+                </div>
+
+                <div>
+                    <label for="last-name">last name: </label>
+                    <input id="last" type="text" size="50" name="last">
+                </div>
+
+                <div>
+                    <label for="pronoun">pronoun: </label>
+                    <select id="pronoun" name="pronoun">
+                        <option value="select">select</option>
+                        <option value="they">they</option>
+                        <option value="she">she</option>
+                        <option value="he">he</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="email">email: </label>
+                    <input id="email" type="email" size="50">
+                </div>
+
+                <div>
+                    <label for="shirt-size">T-Shirt Size: </label>
+                    <select id="size" name="shirt-size"></select>
+                </div>
+
+            </fieldset>
+
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>hungry?</legend>
+
+                <div>
+                    <label for="meal">meal:</label>
+                    <select id="meal" name="meal">
+                        <option value="dish1">select</option>
+                        <option value="dish2">they</option>
+                        <option value="dish3">she</option>
+                        <option value="dish4">he</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+        </section>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    
+
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
