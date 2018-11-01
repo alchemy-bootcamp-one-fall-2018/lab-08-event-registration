@@ -11,5 +11,4 @@ const itemsApi = {
     }
 };
 
-
 export default itemsApi;
