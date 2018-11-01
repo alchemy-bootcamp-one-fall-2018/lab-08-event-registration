@@ -15,34 +15,30 @@
 
     <main>
     <form id="event-form">
-        <fieldset>
+        <fieldset id="about-you">
             <legend>About You!</legend>
             <div>
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </div>
 
             <div>
                 Pronouns<br>
                 <div class="pronouns">
-                    <input type="radio" id="she" value="she" name="pronoun">
+                    <input type="radio" id="she" value="she" name="pronoun" required>
                     <label for="she">She/Her</label>
-                </div>
 
-                <div class="pronouns">
-                    <input type="radio" id="he" value="he" name="pronoun">
+                    <input type="radio" id="he" value="he" name="pronoun" required>
                     <label for="he">He/Him</label>
-                </div>
 
-                <div class="pronouns">
-                    <input type="radio" id="they" value="they" name="pronoun">
+                    <input type="radio" id="they" value="they" name="pronoun" required>
                     <label for="they">They/Them</label>
-                </div>
+
             </div>
 
-            <div>
+            <div id="email">
                 <label for="email">Email</label>
-                <input type="email" name="email">
+                <input type="email" name="email" required>
             </div>
 
         </fieldset>
@@ -51,7 +47,8 @@
             <legend>T-Shirt Preferences</legend>
 
             <div id="shirt-type">
-                <select name="shirt" id="shirt">
+                <label for="shirt-size">Pick a shirt size!</label>
+                <select name="shirt" id="shirt" required>
                     <option value="" hidden disabled selected>Pick a size!</option>
                     <optgroup label="Youth">
                         <option value="y-small">Small</option>
@@ -75,7 +72,8 @@
             </div>
 
             <div id="color-shirt">
-                <select name="color" id="shirt-color">
+                <label for="shirt-color">Pick a shirt color!</label>
+                <select name="color" id="shirt-color" required>
                     <option value="" hidden disabled selected>Pick a color!</option>
                     <option value="black">Black</option>
                     <option value="red">Red</option>
@@ -88,14 +86,14 @@
         <fieldset id="guests">
             <legend>How many guests are you bringing?</legend>
             <label for="guestNumber">Guest Number</label>
-            <input type="number" name="guestNumber" min="1" max="3">
+            <input type="number" name="guestNumber" min="0" max="3" required>
             <p>*not including yourself!</p>
         </fieldset>
         
         <fieldset id="eats">
             <legend>Meal Selection</legend>
             
-            <select name="meal" id="meal">
+            <select name="meal" id="meal" required>
                 <option value="" hidden disabled selected>Your choice!</option>
                 <option value="chicken">Chicken</option>
                 <option value="fish">Fish</option>
@@ -107,10 +105,10 @@
 
             <div>
                 <h4>Dietary Restrictions</h4>
-                <input type="checkbox" id="diet" name="diet" value="dairy-free">
+                <input type="checkbox" id="diet" name="diet" value="dairy-free" >
                 <label for="dairy">Dairy-Free</label>
     
-                <input type="checkbox" id="diet" name="diet" value="gluten-free">
+                <input type="checkbox" id="diet" name="diet" value="gluten-free" >
                 <label for="gluten">Gluten Free</label>
             </div>
 
@@ -120,7 +118,9 @@
             <button>Submit</button>
         </div>
         </form>
-        <p id="success"></p>
+        
+            <p id="confetti" class="hidden"><img src="assets/1569182838df53706f15f586e602dbd4.gif" alt="confetti emoji gif" srcset=""></p>
+            <p id="success"></p>
     </main>
 
     <script src="js/app.js" type="module"></script>

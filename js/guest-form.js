@@ -1,5 +1,6 @@
 const form = document.getElementById('event-form');
 const success = document.getElementById('success');
+const confetti = document.getElementById('confetti');
 
 const guestForm = {
     init(onAdd) {
@@ -36,7 +37,8 @@ const guestForm = {
 
             onAdd(attendee);
 
-            success.textContent = 'Thanks for registering! We"ll be sending you an email confirmation shortly.';
+            success.textContent = 'Thanks for registering!';
+            confetti.classList.remove('hidden');
 
             form.reset();
 
