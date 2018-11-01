@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Space Travel Application</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/registration-form.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <img src = ''>  
+        <h1>Space-travel Application</h1>
+    </header>
+
+    <main>
+        <form id="space-application">
+
+            <fieldset id="personalInfoFieldset">
+                <legend>Your Info</legend>
+
+                <div class="inputPadding">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="inputPadding"> 
+                    <label for="name">Pronoun:</label>
+                    <input type="text" name="pronoun" id="pronoun" placeholder="he/she/they" required>
+                </div>
+
+                <div class="inputPadding">
+                    <label for="name">Email:</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldsetPadding">
+                <legend id='spaceshipLegend'>
+                    Pick Your Spaceship:
+                </legend>
+
+                <label>Emissary</label>
+                <input required type="radio" id="emissaryShip" name="spaceshipType">
+            
+                <label>Scythe</label>
+                <input required type="radio" id="scytheShip" name="spaceshipType">
+                
+                <label>LWSS Frontier
+                    </label>
+                <input required type="radio" id="frontierShip" name="spaceshipType">
+            </fieldset>
+        
+            <fieldset class="fieldsetPadding">
+                <legend id="groupSizeLegend">Group Size</legend>
+                <input type="number" min="1" max="6" name="groupSize" id="groupSize">
+            </fieldset>
+
+            <fieldset id="mealsFieldset">
+                <legend id="mealPref">Choose Your Meals</legend>
+
+                <div class="inputPadding">
+                    <label for="breakfast">Breakfast:</label>
+                    <select name="breakfast" id="breakfast">
+                        <option value="pancakes">pancakes</option>
+                        <option value="fruit smoothie">fruit smoothie</option>
+                        <option value="omlette">omlette</option>
+                    </select>
+                </div>
+
+                <div class="inputPadding">
+                    <label for="Lunch">Lunch:</label>
+                    <select name="lunch" id="lunch">
+                        <option value="veggie burger">veggie burger</option>
+                        <option value="french fries">french fries</option>
+                        <option value="coconut curry soup">coconut curry soup</option>
+                    </select>
+                </div>
+
+                <div class="inputPadding">
+                    <label for="Dinner">Dinner:</label>
+                    <select name="dinner" id="dinner">
+                        <option value="lasagna">lasagna</option>
+                        <option value="veggies and rice">veggies and rice</option>
+                        <option value="kale and avocado salad">kale and avocado salad</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="shirtFieldset">
+                <legend>T-Shirts!</legend>
+                <select name="shirtSize" id="shirtSize">
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+
+
+                
+
+
+
+
+
+            </form> 
+        </main>
+
+            <footer>
+                <button onsubmit="">Register for Space Travel!!</button>
+            </footer>
+ <script type="module" src="js/registration-form.js"></script>
+  <p id='end-message'></p>
+</body>
+</html>
