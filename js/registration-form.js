@@ -21,9 +21,18 @@ const eventForm = {
 
             registration.prefix = elements.prefix.value;
             // console.log('worked, registration.', registration.prefix);
+
+            registration.email = elements.email.value;
+
+            registration.guests = elements.guests.value;
+
+            registration.shirt = elements.shirt.value;
+            // console.log('shirt', registration.shirt);
+
+
             onAdd(registration);
 
-            message.textContent = 'Thanks for registering. See you soon!'
+            message.textContent = 'Thanks for registering. See you soon!';
 
         });
     }
