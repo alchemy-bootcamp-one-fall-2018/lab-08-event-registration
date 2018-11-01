@@ -1,27 +1,75 @@
-*{
-    box-sizing: border-box;
+
+h2{
+    text-align:center;
 }
 h3{
-    text-align: center;
+    text-align: left;
 }
 form{
     display:block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    background-color: aquamarine;
+    /* background-color: rgb(127, 255, 212, .3); */
     padding: 20px 20px 20px 20px;
     width:50%;
+    background-image: url("./img/Foot-Pedal.jpg")
 }
 fieldset{
     display:inline-flex;
     margin: 0 auto;
 }
-input{
-    display:block;
-    margin:auto;
+.surname {
+    display: flex;
+    text-align: center;
+    list-style: none;
 }
+.surname [input]{
+   
+}
+.form-sections {
+    padding:20px 50px 0px 0;
+}
+
 fieldset {
+    position:relative;
     border: 0;
 }
 label{
-    text-align: center;
+    display: inline-block;
+    float: left;
+    clear: left;
+    text-align: left;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 50px;
+} */
+.button {
+    button-color: black;
 }

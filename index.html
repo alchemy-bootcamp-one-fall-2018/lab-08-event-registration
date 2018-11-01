@@ -7,20 +7,18 @@
     <title>EVENT REGISTRATION</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/registration-form.css">
+
 </head>
 <body>
-    <form><h3>REGISTRATION FORM</h3>
-        <div>
+    <form>
+        <h2><span>REGISTRATION </span></h2>
+        <div class ="form-sections">
             <h3>NAME:</h3>
-            <fieldset>
-                <legend>Surname:</legend>
-                    <input type="radio" value="mr" name="surname" input="mr">
-                    <label for="mr">Mr.</label>
-                    <input type="radio" value="Ms." name="surname" input="ms">
-                    <label for="ms">Ms.</label>
-                    <input type="radio" value="Mx." name="surname" input="mx">
-                    <label for="mx">Mx.</label>
-            </fieldset>
+            <ul class="surname">
+                    <li><label for="mr">Mr.</label><input type="radio" value="mr" name="surname" input="mr" ></li>
+                    <li><label for="ms">Ms.</label><input type="radio" value="Ms." name="surname" input="ms"> </li>
+                    <li><label for="mx">Mx.</label><input type="radio" value="Mx." name="surname" input="mx"></li>
+            </ul>
             <label>First Name:
             <input type="text">
             </label>
@@ -28,24 +26,27 @@
             <input type="text">
             </label>
         </div>
-        <div>
+            
+        <div class ="form-sections">
         <h3>CONTACT:</h3>
         <label>Phone:
-            <input type="tel" name="usrtel">
+            <input type="text" name="usrtel">
         </label>
         <label>Email:
-            <input type="email">
+            <input type="text">
         </label>
         </div>
-        <div>
-        <h3>ARE YOU BRINGING FRIENDS:</h3>
-        <label>Number of Attendees:
-            <input type="number">
-        </label>
+
+        <div class="form-sections">
+        <h3>PARTY:</h3>
+            <label>Number of Attendees:
+                <input type="type">
+            </label>
         </div>
-        <div>
-        <h3>COMMEMORATIVE T SHIRT:</h3>
-        <label>Shirt Size</label>
+
+        <div class="form-sections">
+        <h3>T SHIRT SIZE:</h3>
+        <!-- <label>Shirt Size -->
             <select> 
                 <optgroup label="KIDS">
                     <option>Kids Small</option>
@@ -63,10 +64,14 @@
                     <option>Mens Lg</option>
                 </optgroup>
             </select>
-        <label for="shirt">Shirt Color</label>
-        <input type="checkbox">
-        <input type="checkbox">
+        <!-- </label> -->
+        <!-- <label for="shirt"> -->
+            Shirt Color
+        <label for ="color">Green<input type="checkbox"></label>
+        <label for ="color">Purple<input type="checkbox"></label>
+        <!-- </label> -->
         </div>
+
         <div class="diet">
             <h3>Dietary Restrictions:</h3>
             <fieldset>
@@ -79,7 +84,9 @@
                 <label for="mx">VEGAN</label>
             </fieldset>
         </div>
-        <button>SUBMIT</button>
+        <div class="button">
+            <button>SUBMIT</button>
+        </div>
      </form>
 </body>
 </html>
