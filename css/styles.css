@@ -1,0 +1,12 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 50vp;
+}
+
+header {
+    text-align: center;
+}
+
+input:focus {
+    background-color: lightgray;
+}
