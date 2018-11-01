@@ -56,7 +56,7 @@ const formData = {
             personInfo.numGuests = elements.guestNumber.value;
             personInfo.diet = elements.diet.value;
             personInfo.shirt = elements.shirtSize.value;
-            //  personInfo.shirtColor = elements.shirtColor.value;
+            personInfo.shirtColor = elements.shirtColor.value;
 
 
             console.log(personInfo);
