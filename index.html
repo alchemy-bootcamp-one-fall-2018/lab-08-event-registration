@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>WoW LAN Party</h1>
+    <h1>World of Warcraft LAN Party</h1>
     <hr />
     <main class="hidden">
         <h1> Application Form</h1>
@@ -21,7 +21,7 @@
                 <legend>
                     How old are you?
                 </legend>
-                <input required type="text" id="age-text">
+                <input required type="number" id="age-text">
             </fieldset>
 
             <fieldset>
@@ -40,7 +40,7 @@
                     What level are you?
                 </legend>
                 <label for="level">Level:</label>
-                <input type="text" id="level" required min="1" max="120" maxlength="3">
+                <input type="number" id="level" required min="1" max="120" maxlength="3">
             </fieldset>
 
             <fieldset>
@@ -122,8 +122,13 @@
                     <label for="role">Healing</label>
                 </div>
             </fieldset>
+            <div>
+                <button>SUBMIT</button>
+            </div>
 
+            <p id="message"></p>
         </form>
     </main>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

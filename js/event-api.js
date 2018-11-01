@@ -9,6 +9,6 @@ const itemsApi = {
         items.push(item);
         saveItems();
     }
-}
+};
 
-export default itemsApi
+export default itemsApi;
