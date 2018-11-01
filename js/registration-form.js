@@ -25,6 +25,8 @@ const registrationForm = {
             registration.size = elements.size.value;
             registration.style = elements.style.value;
             registration.color = elements.color.value;
+            registration.guests = elements.guests.value;
+            registration.mealSelected = elements['meal-selected'].value;
 
             // call the callback with new item
             onAdd(registration);
