@@ -1,17 +1,30 @@
-
 const form = document.getElementById('coding-creatures');
-const work = document.getElementById('yes');
-const nowork = document.getElementById('no');
 const message = document.getElementById('message');
 
-const itemForm = {
-    init(onAdd) {
+const codingCreaturesForm = {
+    init() {
+        form.addEventListener('submission', function(event) {
+            event.preventDefault();
 
-            // use an onscreen message
-        message.textContent = 'Thanks for your interest! We look forward to killing code with you!';
+            const elements = form.elements;
+            const creature = {};
+
+            creature.name = elements.name.value;
+            creature.work = elements.name.value;
+            creature.attending = elements.name.value;
+            creature.meal = elements.name.value;
+            creature.size = elements.name.value;
+            creature.color = elements.name.value;
+        
+
+    
+            message.textContent = 'We look forward to killing code with you!';
             
-        form.reset();
+            form.reset();
+
+        });
+
     }
 };
 
-export default itemForm;
+export default codingCreaturesForm;
