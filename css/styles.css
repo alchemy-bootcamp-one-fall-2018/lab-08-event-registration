@@ -1,0 +1,16 @@
+body {
+    background-color: paleturquoise;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: double;
+    border-width: 3px;
+}
