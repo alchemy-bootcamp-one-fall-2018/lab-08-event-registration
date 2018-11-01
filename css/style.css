@@ -1,0 +1,10 @@
+header {
+    background-image: url('http://blog.adw.org/wp-content/uploads/2016/02/2.28blog.jpg');
+    height: 140px;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    color:white;
+    text-align: center;
+}
