@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+    Worm Guard Seminar 
+    </header>
+    <form id="seminarForm">
+        <fieldset>
+            <label for="nameInput">Name</label>
+            <input type="text" name="name" id="nameInput">
+        </fieldset>
+
+        <fieldset>
+                <label for="emailInput">Email</label>
+                <input type="email" name="email" id="emailInput">
+        </fieldset>
+
+        <fieldset> 
+            <label for="guestNumber">Number of additional guests:</label>
+            <select name="guestNumber" id="guestNumber">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </fieldset>
+
+        <fieldset> 
+            <label for="shirtSize">T-Shirt Size:</label>
+            <select name="shirtSize" id="shirtSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xl">XL</option>
+            </select>
+            <input type="color" name="shirtColor">
+        </fieldset>
+
+        <fieldset> 
+            <legend>Preferred Pronoun</legend>
+            <div>
+                <label for="heNoun"> He</label>
+                <input type="radio" id="heNoun" value="he" name="pronoun">
+            </div>
+            <div>
+                <label for="sheNoun"> She</label>
+                <input type="radio" id="sheNoun" value="she" name="pronoun">
+            </div>
+            <div>
+                <label for="heNoun">They</label>
+                <input type="radio" id="theyNoun" value="theyNoun" name="pronoun">
+            </div>
+        </fieldset>
+        
+        <fieldset> 
+            <legend>Dietary Choice</legend>
+            <div>
+                <label for="diet"> Vegan</label>
+                <input type="radio" id="diet1" value="vegan" name="diet">
+            </div>
+            <div>
+                <label for="diet"> Gluten Free</label>
+                <input type="radio" id="diet2" value="gluten-free" name="diet">
+            </div>
+            <div>
+                <label for="diet">Beer</label>
+                <input type="radio" id="diet3" value="beer" name="diet">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you prefer Gi or Nogi? (Think wisely)</legend>
+            <div>
+                <label for="gi">Gi (good choice)</label>
+                <input type="checkbox" name="preference" id="gi" value="gi">
+            </div>
+
+            <div>
+                <label for="Nogi"> Nogi (scum)</label>
+                <input type="checkbox" name="preference" id="Nogi" value="nogi">
+            </div>
+            <div>
+                <label for="both"> I am switzerland</label>
+                <input type="checkbox" name="preference" id="both" value="both">
+            </div>
+        </fieldset>
+        <fieldset>
+                <legend>Do to believe Keenan was robbed of his win at gi world championships 2018?</legend>
+    
+                    <div>
+                    <label for="wasRobbed">Yes</label>
+                    <input type="radio" name="wasRobbed" id="yes" value="yes">
+                    </div>
+    
+                    <div>
+                    <label for="wasRobbed">No </label>
+                    <input type="radio" name="wasRobbed" id="no" value ="no">
+                    </div>
+
+                    <div>
+                    <label for="explain"> Elaborate on your opinion: </label> <br>
+                    <textarea name="explain" id="explain" cols="80" rows="10" heigth="50px" width= "70px"></textarea>
+                    </div>
+
+        </fieldset>
+        <button type="submit"> Submit Forms</button>
+    </form>  
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
