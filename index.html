@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max's Party</title>
+</head>
+<body>
+    <header>
+        <h1>Max's Birthday Launch Party</h1>
+        <img class="doggo" src="assets/snow doggo.jpg">   
+    </header>
+
+    <main>
+        <form id="mission-control">
+            <fieldset>
+                <legend>
+                    <strong>MISSION CONTROL</strong>
+                </legend>
+
+                <div>
+                    <label for="pronouns">Preferred pronouns</label>
+                    <input name="pronouns" type="text"> 
+                </div>
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input name="firstName" type="text"> 
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input name="lastName" type="text"> 
+                </div>
+
+                <div>
+                    <label for="email">Email Address</label>
+                    <input name="email" type="text"> 
+
+                </div>
+                <button class="action">Confirm</button>
+            </fieldset>
+        </form>
+
+        <form id="ground-control">
+            <fieldset>
+                <legend>
+                   <strong>GROUND CONTROL</strong>
+                </legend>
+                <p>
+                    Suit Up!
+                </p>
+                    Pick:
+                    <select>
+                        <option>Astronaut</option>
+                        <option>Cosmonaut</option>
+                    </select>
+                    <br>
+                    Size:
+                    <select>
+                        <option>small</option>
+                        <option>medium</option>
+                        <option>large</option>
+                    </select>
+                    <br>
+                    Color:
+                    <select>
+                        <option>black</option>
+                        <option>white</option>
+                        <option>green</option>      
+                    </select>
+                    <br>
+                <button class="action">Confirm</button>
+
+                <p>
+                    MRE Options
+                </p>
+                    <input type="radio" name="MRE" value="sandwich">Gemini corned beef sandwich
+                    <br>
+                    <input type="radio" name="MRE" value="musaka">Interkosmos musaka
+                    <br>
+                    <input type="radio" name="MRE" value="lobster">Skylab Lobster Newberg
+                    <br>
+                    <input type="radio" name="MRE" value="borscht">CCCP borscht
+                    <br>
+                <button class="action">Confirm</button>
+            </fieldset>
+        </form>
+
+
+    </main>
+    <!-- <footer> 
+        LAUNCH COORDINATES
+        DATE, TIME, LOCATION
+        -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

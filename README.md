@@ -1,0 +1,1 @@
+Register to let us know if you can attend Max's birthday party.
