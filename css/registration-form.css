@@ -1,0 +1,26 @@
+#fName, #lName, #email, #pronoun {
+    display: block;
+}
+
+legend {
+    font-weight: bold;
+}
+
+form {
+    width: 70%;
+}
+
+label {
+    display: inline-block;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: inline;
+    margin: 2%;
+}
+
+button {
+    margin: 5%;
+}
