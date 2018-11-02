@@ -11,10 +11,13 @@ const registrationForm = {
             const registrations = {};
 
             registrations.name = elements.person.value;
-
             registrations.pronoun = elements.pronoun.value;
-
             registrations.email = elements.email.value;
+            registrations.tshirt = elements.tshirt.value;
+            registrations.color = elements.color.value;
+            registrations.guests = elements.guests.value;
+            registrations.meal = elements.meal.value;
+
             onAdd(registrations);
         });
     }

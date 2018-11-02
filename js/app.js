@@ -6,8 +6,3 @@ registrationForm.init(function(registration) {
     console.log(registration);
 
 });
-
-// registrationForm.init(function(formData) {
-//     // eslint-disable-next-line
-//     console.log(formData);
-// });

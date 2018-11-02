@@ -35,47 +35,47 @@
                         <label for="they">They</label>
                     </div>
                 </div>
-               <!-- 
                 <div>
                     <label>Email address:</label>
                     <input type="email" id="email">
                 </div>
             </fieldset>
-
+            
             <p>Pick your t-shirt size and color:</p>
-            <select>
+            <select id="tshirt">
+                <option value="" hidden disabled selected></option>
                 <optgroup label="kids">
-                    <option>small</option>
-                    <option>medium</option>
-                    <option>large</option>
+                    <option value="kids S">small</option>
+                    <option value="kids M">medium</option>
+                    <option value="kids L">large</option>
                 </optgroup>
                 <optgroup label="fitted">
-                    <option>extra-small</option>
-                    <option>small</option>
-                    <option>medium</option>
-                    <option>large</option>
-                    <option>extra-large</option>
+                    <option value="fitted XS">extra-small</option>
+                    <option value="fitted S">small</option>
+                    <option value="fitted M">medium</option>
+                    <option value="fitted L">large</option>
+                    <option value="fitted XL">extra-large</option>
                 </optgroup>
                 <optgroup label="unisex">
-                    <option>small</option>
-                    <option>medium</option>
-                    <option>large</option>
-                    <option>extra-large</option>
-                    <option>2XL</option>
+                    <option value="unisex S">small</option>
+                    <option value="unisex M">medium</option>
+                    <option value="unisex L">large</option>
+                    <option value="unisex XL">extra-large</option>
+                    <option value="unisex 2XL">2XL</option>
                 </optgroup>
             </select>
-            <select>
+            <select id="color">
                 <optgroup>
                     <optgroup>Color</optgroup>
-                        <option>Blue</option>
-                        <option>Grey</option>
-                        <option>Green</option>
-                        <option>Hot Pink</option>
+                    <option>Blue</option>
+                    <option>Grey</option>
+                    <option>Green</option>
+                    <option>Hot Pink</option>
                 </optgroup>
             </select>
 
-            <p>Number of guests, in addition to yourself, up to 5 permitted: <input type="number" min="0" max="5" id="guests"></p>
-
+            <p>Number of guests, in addition to yourself, up to 5 permitted: <input required type="number" min="0" max="5" id="guests"> </p>
+           
             <fieldset>
                 <legend>Pick your protein:</legend>
                 <div>
@@ -86,13 +86,13 @@
                     <input type="radio" name="meal" value="tofu">
                     <label>Tofu</label>
                     <p>All meals include vegetables and a drink.</p>
-                </div>
-            -->
+                </div>   
             </fieldset> 
 
             <div>
                 <button type="submit" name="submit">Submit</button>
             </div>
+
         </form>
     </main>
 
