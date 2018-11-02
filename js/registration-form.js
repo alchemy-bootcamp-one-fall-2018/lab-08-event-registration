@@ -1,5 +1,5 @@
 const form = document.getElementById('event-registration');
-// const person = document.getElementById('person');
+const formResponse = document.getElementById('submit-message');
 
 const registrationForm = {
     init(onAdd) {
@@ -19,8 +19,19 @@ const registrationForm = {
             registrations.meal = elements.meal.value;
 
             onAdd(registrations);
-        });
+            formResponse.textContent = 'Thanks for registering!';
+            form.reset();
+            setTimeout(function() {
+                clearMessage();
+                window.location.reload();
+            }, 4000);
+        });        
+        function clearMessage() {
+            formResponse.textContent = '';
+        }
+        // registrationForm.addEventListener('change', clearMessage);
     }
 };
+
 
 export default registrationForm;

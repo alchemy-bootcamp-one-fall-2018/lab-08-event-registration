@@ -7,7 +7,7 @@ function saveRegistrations() {
 
 const registrationsApi = {
     add(registration) {
-        registration.push(registration);
+        registrations.push(registration);
         saveRegistrations();
     }
 };
