@@ -16,10 +16,11 @@ h3{
     
   
 form{
+    background-color: rgb(127, 255, 212, 1);
     display:block;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    background-color: rgb(127, 255, 212, .3);
+    background-color: rgb(127, 255, 212, 1);
     padding: 20px 20px 20px 20px;
     width:50%;
     
@@ -28,16 +29,8 @@ fieldset{
     display:inline-flex;
     margin: 0 auto;
 }
-.surname {
-    display: flex;
-    text-align: center;
-    list-style: none;
-}
-.surname [input]{
-   
-}
 .form-sections {
-    padding:20px 50px 0px 0px;
+    padding:20px 50px 20px 20px;
 }
 
 fieldset {
@@ -81,5 +74,14 @@ input[type=submit]:hover {
     padding: 20px 50px;
 } */
 .button {
-    button-color: black;
+    background-color: rgb(211, 116, 81); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
