@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration-form.css">
+    <title>Event Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Doggie Meet Up Registration</h2>
+    </header>
+    
+    <main class="hidden">
+        <form id="form-registration">
+            <div class="name">
+                <label for="name"> Your Name </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="pronoun">What is your preferred pronoun?</label>
+                <select name="pronoun">
+                    <option value="" disabled selected> Please Select One</option>
+                    <option value="he">he/him/his/himself</option>
+                    <option value="she">she/her/hers/herself</option>
+                    <option value="they">they/them/theirs/themself</option>
+                    <option value="ze">ze/zie/hir/hirs/hirself</option>
+                    <option value="xe">xe/xem/xyr/xyrs/xemself</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="name">
+                    <label for="name"> Do you have a dog?</label>
+                    <select name="dogs">
+                        <option value="1">1 dog</option>
+                        <option value="2">2 dogs</option>
+                        <option value="3">3 dogs</option>
+                        <option value="4+">more than 3 dogs</option>
+                    </select>
+            </div>
+
+            <div id ="email">
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id ="phone">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required>    
+            </div>
+            <div id="toy">
+                <label for="toy">Are you going to bring a toy?</label>
+                <select id="toy">
+                    <option value="" disabled selected> Please Select One</option>
+                    <option value="frisbee">Frisbee</option>
+                    <option value="tennis-ball">Tennis Ball</option>
+                    <option value="squeaky-toy">Squeaky Toy</option>
+                    <option value="toy-rope">Toy Rope</option>
+                    <option value="none">None</option>
+                    </select>
+            </div>
+            <div id="treat">
+                <label for="treat">Treat Preference</label>
+                <select id="treat">
+                        <option value="" disabled selected> Please Select One</option>
+                        <option value="meat">chicken/pork/beef/lamb</option>
+                        <option value="fish">salmon</option>
+                        <option value="vegan">vegan</option>
+                        <option value="gluten-free">gluten-free/option>
+                        <option value="none">no preference</option>
+                </select>
+            </div>
+            <div>
+                <label for="shirt">Please select T-shirt size</label>
+                    <select id="shirt">
+                    <option value="" disabled selected> Please Select One</option>
+                    <optgroup label="women">
+                        <option value="wssmall"> women's small</option> 
+                        <option value="wsmedium"> women's medium</option> 
+                        <option value="wslarge"> women's large</option> 
+                        <option value="wsxlarge"> women's x-large</option> 
+                    </optgroup>
+                    <optgroup label="men"></optgroup>
+                        <option value="mssmall">men's small</option>
+                        <option value="msmedium">men's medium</option>
+                        <option value="mslarge">men's large</option>
+                        <option value="msxlarge">men's x-large</option>
+                </select>
+            </div>
+            <div id="media">
+                <label for="social-media">Please put your dog's social media</label>
+                <textarea name="social-media" form="social-media" id="social-media" placeholder="Enter Here"></textarea>
+            </div>
+            <div>
+                <button>Attending</button>
+            </div>
+            <p id="message"></p>
+        </form>
+    </main>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
