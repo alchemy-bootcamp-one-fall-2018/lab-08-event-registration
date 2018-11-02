@@ -11,15 +11,12 @@ const registrationForm = {
             const registrations = {};
 
             registrations.name = elements.person.value;
+
+            registrations.pronoun = elements.pronoun.value;
+
+            registrations.email = elements.email.value;
             onAdd(registrations);
-
-            // registrations.pronoun = elements.pronoun.value;
-
-            // registrations.email = elements.email.value;
-
         });
-
-
     }
 };
 

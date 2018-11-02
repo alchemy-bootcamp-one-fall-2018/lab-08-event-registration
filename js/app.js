@@ -1,13 +1,13 @@
 import registrationsApi from './event-api.js';
 import registrationForm from './registration-form.js';
 
-registrationsApi.init(function(attendees) {
+registrationForm.init(function(registration) {
     // eslint-disable-next-line
-    console.log(attendees);
+    console.log(registration);
 
 });
 
-registrationForm.init(function(formData) {
-    // eslint-disable-next-line
-    console.log(formData);
-});
+// registrationForm.init(function(formData) {
+//     // eslint-disable-next-line
+//     console.log(formData);
+// });
