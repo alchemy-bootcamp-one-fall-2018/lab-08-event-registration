@@ -1,20 +1,19 @@
-let registration =
+let registrations = [];
 
-function saveAddGuest() {
-    localStorage.setRegistration('addGuest', JSON.stringify(addGuest));
-};
+function saveRegistration() {
+    localStorage.setItem('registrations', JSON.stringify(registrations));
+}
 
-const addGuestApi = {
-    getAll() {
-        const json = localStorage.getAddGuest('addGuest');
-        if(json) {
-            addGuest = JSON.parse(json);
-        }   
-    },
-    add(addGuest) {
-        addGuest.push(addGuest);
-        saveAddGuest();
+const registrationApi = {
+    
+
+    add(registration) {
+        registrations.push(registration);
+        saveRegistration();
     },
 };
 
-export default addGuestApi;
+export default registrationApi;
+
+// TODO: add local storage back
+

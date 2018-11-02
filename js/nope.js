@@ -1,3 +1,15 @@
+// getAll() {
+//     const json = localStorage.getAddGuest('addGuest');
+//     if(json) {
+//         addGuest = JSON.parse(json);
+//     }   
+//     return guests;
+// },
+
+
+
+
+
 // const addGuest = {
 //     init(onAdd) {
 //         const form = document.getElementById('add-guest');

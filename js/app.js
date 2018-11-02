@@ -1,7 +1,7 @@
-import eventApi from './js/event-api.js';
-import registrationForm from './js/registration-form.js';
+import registrationApi from './event-api.js';
+import registrationForm from './registration-form.js';
 
-registrationForm.init(function(registration) {
-    registrationForm.add(registration);
+registrationForm.init(function(guest) {
+    registrationApi.add(guest);
 
 });
