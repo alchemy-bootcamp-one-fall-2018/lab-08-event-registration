@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/css/registration-form.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- <img class="logo" src="" -->
+        <h1>Event Registration Form</h1>
+    </header>
+    <main>
+    <form id="event-application">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+    <fieldset>
+        <legend>
+            Pronoun
+        </legend>
+        <input required type="radio" id="she" value="she" name="pronoun">
+        <label for="she">She</label>
+
+        <input required type="radio" id="he" value="he" name="pronoun">
+        <label for="he">He</label>
+
+        <input required type="radio" id="they" value="they" name="pronoun">
+        <label for="they">They</label>
+    </fieldset>   
+    <fieldset>
+    <legend>
+            T Shirt Size
+    </legend>
+    <input required type="radio" id="small" value="small" name="teeSize">
+    <label for="small">Small</label>
+
+    <input required type="radio" id="medium" value="medium" name="teeSize">
+    <label for="medium">Medium</label>
+
+    <input required type="radio" id="large" value="large" name="teeSize">
+    <label for="medium">Large</label>
+        
+   </fieldset>
+
+   <fieldset>
+        <legend>
+                T Shirt Color
+        </legend>
+        <input required type="radio" id="white" value="white" name="teeColor">
+        <label for="white">White</label>
+    
+        <input required type="radio" id="black" value="black" name="teeColor">
+        <label for="black">Black</label>
+    
+        <input required type="radio" id="green" value="green" name="teeColor">
+        <label for="green">Green</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+                T Shirt Style
+        </legend>
+        <input required type="radio" id="kids" value="kids" name="teeStyle">
+        <label for="kids">Kids</label>
+    
+        <input required type="radio" id="adult" value="adult" name="teeStyle">
+        <label for="adult">Adult</label>
+    </fieldset>
+
+    <fieldset>
+            <legend>
+                Number of people attending           
+            </legend>
+            <input required type="radio" id="one" value="one" name="guests">
+            <label for="one">1</label>
+        
+            <input required type="radio" id="two" value="two" name="guests">
+            <label for="two">2</label>
+        
+            <input required type="radio" id="three" value="three" name="guests">
+            <label for="three">3</label>
+    
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Meals
+            </legend>
+            <label for="vegetarian">Vegetarian</label>
+            <select name="vegetarian">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label for="chicken">Chicken</label>
+            <select name="chicken">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label for="kosher-halal">Kosher/Halal</label>
+            <select name="kosher-halal">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            
+        </fieldset>
+    <div>
+        <button>Submit</button>
+    </div>
+    <p id="message"></p>
+    </form>
+    </main>
+
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
