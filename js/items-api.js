@@ -1,7 +1,7 @@
 let items = [];
 
 function saveItems() {
-    localStorage.setItems('items', JSON.stringify(items));
+    localStorage.setItem('items', JSON.stringify(items));
 }
 
 const itemsApi = {
