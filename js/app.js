@@ -1,7 +1,9 @@
-import eventApi from './event-api.js';
+/* eslint-disable no-console */
+
+import guestsApi from './guests-api.js';
 import registrationForm from './registration-form.js';
 
-registrationForm.init(function(event) {
-    eventApi.add(event);
-    // console.log
+registrationForm.init(function(guest) {
+    guestsApi.add(guest);
+    console.log(guest);
 });

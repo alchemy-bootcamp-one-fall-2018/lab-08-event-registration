@@ -23,10 +23,10 @@
                 <label>Name:</label>
                 <input type="text" name="name" id="name" required>
 
-                <input type="checkbox">
+                <input type="checkbox" name="pronoun" id="him" value="him">
                 <label>Him</label>
 
-                <input type="checkbox">
+                <input type="checkbox" name="pronoun" id="her" value="her">
                 <label>Her</label>
 
                 <div>
@@ -34,62 +34,60 @@
                     <input type="text" name="email" id="email" required>
                 </div>
                 
-                <select id="size" name="dogs" required>
-                    <option value="" hidden disabled selected>Number of Dogs</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <div>
+                    <label for="dog-number">Number of Dogs</label>
+                    <input type="number" name="dog-number" id="dog-number">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    T-Shirt
+                </legend>
+                
+                <select id="size" name="size" required>
+                    <option value="" hidden disabled selected>Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xlarge">Xlarge</option>
+                </select>
+            
+                <select id="style" name="style" required>
+                    <option value="" hidden disabled selected>Select a style</option>
+                    <option value="mens">Mens</option>
+                    <option value="womens">Womens</option>
+                    <option value="kids">Kids</option>
                 </select>
 
-                <section>
-                    <legend>
-                        T-Shirt
-                    </legend>
-                    
-                    <select id="size" name="size" required>
-                        <option value="" hidden disabled selected>Select a size</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="xlarge">Xlarge</option>
-                    </select>
-                
-                    <select id="style" name="style" required>
-                        <option value="" hidden disabled selected>Select a style</option>
-                        <option value="mens">Mens</option>
-                        <option value="womens">Womens</option>
-                        <option value="kids">Kids</option>
-                    </select>
-
-                    <select id="color" name="color" required>
-                        <option value="" hidden disabled selected>Select a color</option>
-                        <option value="white">White</option>
-                        <option value="black">Black</option>
-                        <option value="green">Green</option>
-                    </select>
-                </section>
-     
-                <section>
-                    <legend>
-                        Meals
-                    </legend>
-                    
-                    <input type="checkbox">
-                    <label>Burgers</label>
-                    
-                    <input type="checkbox">
-                    <label>Hotdogs</label>
-
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>
-
-                    <p id="message"></p>
-                </section>
-
-                <script type="module" src="js/app.js"></script>
+                <select id="color" name="color" required>
+                    <option value="" hidden disabled selected>Select a color</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                </select>
             </fieldset>
+     
+            <fieldset>
+                <legend>
+                    Meals
+                </legend>
+                
+                <input type="checkbox" name="meal" id="burgers">
+                <label>Burgers</label>
+                
+                <input type="checkbox" name="meal" id="hotdogs">
+                <label>Hotdogs</label>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+            
+            <p id="message"></p>
         </form>
+
+        <script type="module" src="js/app.js"></script>
+
     </main>
 </body>
 </html>
