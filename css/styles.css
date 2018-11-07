@@ -1,0 +1,16 @@
+body {
+    background-image: url("https://fhm.nl/wp-content/uploads/2017/11/World_of_Warcraft_Battle_for_Azeroth_Art.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+}
+#wow-application {
+    background-color: rgba(169, 169, 169, .6);
+    padding: 25px;
+    border-radius: 5px;
+}
+h1 {
+    background-color: rgba(169, 169, 169, .4);
+    text-align: center;
+    color: rgba(0, 0, 0, 1)
+}
