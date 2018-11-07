@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Doggie Campout</title>
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <h1>Doggie Campout</h1>
     </header>
     
@@ -23,10 +24,10 @@
                 <label>Name:</label>
                 <input type="text" name="name" id="name" required>
 
-                <input type="checkbox" name="pronoun" id="him" value="him">
+                <input type="radio" name="pronoun" id="him" value="him">
                 <label>Him</label>
 
-                <input type="checkbox" name="pronoun" id="her" value="her">
+                <input type="radio" name="pronoun" id="her" value="her">
                 <label>Her</label>
 
                 <div>
@@ -34,8 +35,8 @@
                     <input type="text" name="email" id="email" required>
                 </div>
                 
-                <div>
-                    <label for="dog-number">Number of Dogs</label>
+                <div id="dogs">
+                    <label>Number of Dogs:</label>
                     <input type="number" name="dog-number" id="dog-number">
                 </div>
 
@@ -74,10 +75,10 @@
                     Meals
                 </legend>
                 
-                <input type="checkbox" name="meal" id="burgers">
+                <input type="radio" name="meal" id="burgers" value="burgers">
                 <label>Burgers</label>
                 
-                <input type="checkbox" name="meal" id="hotdogs">
+                <input type="radio" name="meal" id="hotdogs" value="hotdogs">
                 <label>Hotdogs</label>
             </fieldset>
             
