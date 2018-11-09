@@ -69,10 +69,27 @@
                 <option value="2">VEGAN</option>
             </select>
         </div>
+        <div class="number">
+                <label for="name">NUMBER IN PARTY:</label>
+                <input type="text" name="number" id="number" required >
         <div class="button">
             <button>SUBMIT</button>
             <p id="systemresponse"></p>
         </div>
+        <table id="form-submission-table">
+            <thead>
+                    <tr id="column-headings" class="hidden">
+                        <td>name</td>
+                        <td>pronoun</td>
+                        <td>phone</td>
+                        <td>email</td>
+                        <td>size</td>
+                        <td>color</td>
+                        <td>diet</td>
+                        <td>number</td>
+                    </tr>
+                </thead>
+            </table>
     </form>
 </body>
 <script type="module" src="js/app.js"></script>
