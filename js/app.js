@@ -1,6 +1,6 @@
-import eventApi from './event-api.js';
-import registrationForm from './registration-form.js';
+import itemsApi from './items-api.js';
+import eventFormDetails from './registration-form.js';
 
-registrationForm.init(function(item) {
-    eventApi.add(item);
+eventFormDetails.init(function(items) {
+    itemsApi.add(items);
 });

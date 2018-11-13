@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EVENT REGISTRATION</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/registration-form.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/registration-form.css" type="text/css">
 
 </head>
 
@@ -19,7 +19,7 @@
         <div class="name">
             <label for="name">NAME:</label>
             <input type="text" name="name" id="name" required >
-            <label for="pronoun" name="pronoun" id="prounoun" required>PRONOUN:</label>
+            <label for="pronoun" name="pronoun" id="pronoun" required>PRONOUN:</label>
             <select>
                 <option value="0">HE/HIM</option>
                 <option value="1">HER/SHE</option>
@@ -76,7 +76,9 @@
             <button>SUBMIT</button>
             <p id="systemresponse"></p>
         </div>
-        <table id="form-submission-table">
+    </form>
+    <section id="results">
+        <table id="form-results-display"> 
             <thead>
                     <tr id="column-headings" class="hidden">
                         <td>name</td>
@@ -88,9 +90,9 @@
                         <td>diet</td>
                         <td>number</td>
                     </tr>
-                </thead>
-            </table>
-    </form>
+            </thead>
+        </table>
+    </section>
 </body>
 <script type="module" src="js/app.js"></script>
 </html>

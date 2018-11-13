@@ -1,11 +1,11 @@
 
-h2{
+h2 {
     text-align:center; 
     color: rgb(255, 255, 255,.85);
     letter-spacing: 12px; 
 
 }
-h3{
+h3 {
     text-align: left;
 }
 .bk-img {
@@ -15,7 +15,7 @@ h3{
 }
     
   
-form{
+form {
     background-color: rgb(127, 255, 212, 1);
     display:block;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -25,7 +25,7 @@ form{
     width:50%;
     
 }
-fieldset{
+fieldset {
     display:inline-flex;
     margin: 0 auto;
 }
@@ -37,7 +37,7 @@ fieldset {
     position:relative;
     border: 0;
 }
-label{
+label {
     display: inline-block;
     float: left;
     clear: left;
@@ -68,14 +68,14 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-/* div {
+div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px 50px;
 } */
+
 .button {
-    background-color: rgb(211, 116, 81); /* Green */
-    border: none;
+    background-color: rgb(211, 116, 81); 
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -84,4 +84,7 @@ input[type=submit]:hover {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+#results{
+    height: 150px;
 }

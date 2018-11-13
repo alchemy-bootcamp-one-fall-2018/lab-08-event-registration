@@ -21,8 +21,9 @@ const eventFormDetails = {
             userInput.size = elements.size.value;
             userInput.color = elements.color.value;
             userInput.diet = elements.diet.value;
+       
 
-            //setup callback function
+            //setup callback function callback
             onAdd(userInput);
 
             //system response
