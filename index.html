@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EVENT REGISTRATION</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/registration-form.css" type="text/css">
+
+</head>
+
+<body>
+    <form id="event-registration">
+        <div class="bk-img">
+            <h2><span>REGISTRATION </span></h2>
+        </div>
+        <div class="name">
+            <label for="name">NAME:</label>
+            <input type="text" name="name" id="name" required >
+            <label for="pronoun" name="pronoun" id="pronoun" required>PRONOUN:</label>
+            <select>
+                <option value="0">HE/HIM</option>
+                <option value="1">HER/SHE</option>
+                <option value="2">THEY/THEM</option>
+            </select>
+        </div>
+        <div class="contact">
+            <label for="phone">PHONE:</label>
+            <input type="text" name="phone" id="phone" required>
+
+            <label for="email">EMAIL:</label>
+                <input type="text" name="email" id="email" required>
+        </div>
+
+
+        <div class="shirt">
+            <label for="size"> SHIRT SIZE</label>
+            <select id="size" name="size" id="size" required >
+                <optgroup label="KIDS">
+                    <option>Kids Small</option>
+                    <option>Kids Med</option>
+                    <option>Kids Lg</option>
+                </optgroup>
+                <optgroup label="WOMENS">
+                    <option>womens Small</option>
+                    <option>womens Med</option>
+                    <option>womens Lg</option>
+                </optgroup>
+                <optgroup label="MENS">
+                    <option>Mens Small</option>
+                    <option>Mens Med</option>
+                    <option>Mens Lg</option>
+                </optgroup>
+            </select>
+            <label for="color">COLOR:</label> 
+            <select id="color" name="color" id="color" required>
+                <option value="0">CORAL</option>
+                <option value="1">MINT</option>
+                <option value="2">SCARLET</option>
+            </select>
+        </div>
+        <div class="diet">
+            <label for="diet">DIETARY RESTRICTIONS:</label>
+            <select id="diet" name="diet" required>
+                <option value="0">NONE</option>
+                <option value="1">VEGITARIAN</option>
+                <option value="2">VEGAN</option>
+            </select>
+        </div>
+        <div class="number">
+                <label for="name">NUMBER IN PARTY:</label>
+                <input type="text" name="number" id="number" required >
+        <div class="button">
+            <button>SUBMIT</button>
+            <p id="systemresponse"></p>
+        </div>
+    </form>
+    <section id="results">
+        <table id="form-results-display"> 
+            <thead>
+                    <tr id="column-headings" class="hidden">
+                        <td>name</td>
+                        <td>pronoun</td>
+                        <td>phone</td>
+                        <td>email</td>
+                        <td>size</td>
+                        <td>color</td>
+                        <td>diet</td>
+                        <td>number</td>
+                    </tr>
+            </thead>
+        </table>
+    </section>
+</body>
+<script type="module" src="js/app.js"></script>
+</html>
