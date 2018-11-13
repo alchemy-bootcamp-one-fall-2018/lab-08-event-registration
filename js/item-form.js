@@ -2,8 +2,8 @@ const form = document.getElementById('coding-creatures');
 const message = document.getElementById('message');
 
 const codingCreaturesForm = {
-    init() {
-        form.addEventListener('submission', function(event) {
+    init(onAdd) {
+        form.addEventListener('submit', function(event) {
             event.preventDefault();
 
             const elements = form.elements;
@@ -16,10 +16,8 @@ const codingCreaturesForm = {
             creature.size = elements.name.value;
             creature.color = elements.name.value;
         
-
-    
+            onAdd(creature);
             message.textContent = 'We look forward to killing code with you!';
-            
             form.reset();
 
         });
